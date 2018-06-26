@@ -1,0 +1,9 @@
+{
+    "home": {
+        "title": "Salut, je suis {{ name }}",
+        "buttons": {
+            "primary": "ce bouton ne fait rien",
+            "secondary": "celui-ci non plus"
+        }
+    }
+}
