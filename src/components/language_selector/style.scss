@@ -38,10 +38,13 @@
         }
     }
 
-    .lang:hover {
-        color: $green-hover;
-        .content:before {
-            @include underline($green-hover, 100%, auto);
+    /* don't apply hover effect on touch screens */
+    @media(pointer: fine){
+        .lang:hover {
+            color: $green-hover;
+            .content:before {
+                @include underline($green-hover, 100%, auto);
+            }
         }
     }
 }
