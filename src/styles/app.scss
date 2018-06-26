@@ -1,3 +1,6 @@
-.test-sass {
-    color: red;
+@import 'reset';
+@import 'colors';
+
+:local(.component) {
+    
 }
