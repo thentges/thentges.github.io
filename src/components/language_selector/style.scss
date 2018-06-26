@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+:local(.component) {
+    color: $green;
+    position: fixed;
+    display: flex;
+    right: 0;
+    padding: 5px 10px;
+
+    .lang {
+        margin-left: 5px;
+        margin-right: 5px;
+
+        &.selected {
+            color: $green-active;
+            text-decoration: underline;
+        }
+    }
+}

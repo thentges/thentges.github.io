@@ -9,3 +9,8 @@
 @secondaryColorFocus: #c4c4c4;
 @secondaryColorDown: #b4b4b4;
 // @secondaryColorActive: red;
+
+@linkColor           : @primaryColor;
+// @linkUnderline       : none;
+// @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+// @linkHoverUnderline  : @linkUnderline;
