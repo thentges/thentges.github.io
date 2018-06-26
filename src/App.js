@@ -5,7 +5,7 @@ import {Button} from 'semantic-ui-react'
 class App extends Component {
   render() {
     return (
-        <React.Fragment>
+        <div className={style.component}>
             <div>
                 This is my react app on github pages ! <br />
                 more content incomming...
@@ -14,9 +14,10 @@ class App extends Component {
                 testing sass support, if this text is red, that means sass is working
             </div>
             <div>
-                <Button>semantic ui theming test</Button>
+                <Button primary>semantic ui theming test</Button>
+                <Button secondary>semantic ui theming test</Button>
             </div>
-        </React.Fragment>
+        </div>
     );
   }
 }

@@ -1,3 +1,11 @@
 /*******************************
      User Global Variables
 *******************************/
+
+@primaryColor: #9be795;
+
+@secondaryColor: #d4d4d4;
+@secondaryColorHover: #c4c4c4;
+@secondaryColorFocus: #c4c4c4;
+@secondaryColorDown: #b4b4b4;
+// @secondaryColorActive: red;
