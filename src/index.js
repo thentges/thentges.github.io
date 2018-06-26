@@ -13,10 +13,13 @@ const AppContainer = () => (
     </I18nextProvider>
 )
 
-// tell i18next not to escape, because React already does TODO revoir ça
+const lang = navigator && navigator.language ?
+    navigator.language.substr(0, 2) : 'en';
+
+
 i18next.init({
     interpolation: { escapeValue: false },
-    lng: 'en',
+    lng: lang,
     resources: {
         en: {
             common: common_en

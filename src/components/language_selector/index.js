@@ -8,19 +8,20 @@ class LanguageSelector extends React.Component {
     }
 
     render() {
-        const lang = this.props.i18n.language;
-        console.log(lang);
+        const lang = this.props.i18n.language
+        const FRENCH = 'Français (FR)'
+        const ENGLISH = 'English (EN)'
 
         return (
             <div className={style.component} >
                 <div className={"link lang" + (lang === 'fr' ? ' selected' : '') }
                     onClick={this.changeLanguage.bind(this ,'fr')}>
-                Français (FR)
+                {FRENCH}
                 </div>
                 <div>|</div>
                 <div className={"link lang" + (lang === 'en' ? ' selected' : '') }
                     onClick={this.changeLanguage.bind(this ,'en')}>
-                English (EN)
+                {ENGLISH}
                 </div>
             </div>
         );
