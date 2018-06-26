@@ -2,18 +2,4 @@
 
 :local(.component) {
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-
-    .link {
-        cursor: pointer;
-        color: $green;
-        transition: all 0.4s ease;
-    }
-
-    .link:hover {
-        color: $green-hover;
-    }
-
-    .link:active {
-        color: $green-active;
-    }
 }

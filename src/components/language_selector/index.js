@@ -1,6 +1,7 @@
 import React from 'react';
 import { translate } from 'react-i18next';
 import style from './style.scss'
+import LangItem from './lang_item'
 
 class LanguageSelector extends React.Component {
     changeLanguage(lang) {
@@ -14,15 +15,15 @@ class LanguageSelector extends React.Component {
 
         return (
             <div className={style.component} >
-                <div className={"link lang" + (lang === 'fr' ? ' selected' : '') }
-                    onClick={this.changeLanguage.bind(this ,'fr')}>
-                {FRENCH}
-                </div>
+                <LangItem isSelected={lang === 'fr'}
+                    changeLanguage={this.changeLanguage.bind(this, 'fr')}>
+                    {FRENCH}
+                </LangItem>
                 <div>|</div>
-                <div className={"link lang" + (lang === 'en' ? ' selected' : '') }
-                    onClick={this.changeLanguage.bind(this ,'en')}>
-                {ENGLISH}
-                </div>
+                <LangItem isSelected={lang === 'en'}
+                    changeLanguage={this.changeLanguage.bind(this, 'en')}>
+                    {ENGLISH}
+                </LangItem>
             </div>
         );
     }
