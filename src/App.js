@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './styles/app.scss'
+import {Button} from 'semantic-ui-react'
 
 class App extends Component {
   render() {
@@ -11,6 +12,9 @@ class App extends Component {
             </div>
             <div className="test-sass">
                 testing sass support, if this text is red, that means sass is working
+            </div>
+            <div>
+                <Button>semantic ui theming test</Button>
             </div>
         </React.Fragment>
     );
