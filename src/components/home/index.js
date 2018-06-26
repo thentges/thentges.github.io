@@ -27,7 +27,7 @@ class Home extends Component {
                     </div>
                     <Tags list={["TAG1", "TAG2", "TAG3"]} />
                 </div>
-                <div>
+                <div className="buttons">
                     <Button primary>{t('home.buttons.primary')}</Button>
                     <Button secondary>{t('home.buttons.secondary')}</Button>
                 </div>
