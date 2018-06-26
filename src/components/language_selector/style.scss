@@ -27,7 +27,7 @@
         margin-right: 5px;
 
         .content:before {
-            @include underline($green, 0px, -1px);
+            @include underline($green, 0px, -0px);
         }
 
         &.selected {
