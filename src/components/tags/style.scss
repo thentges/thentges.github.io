@@ -1,0 +1,20 @@
+@import '../../styles/colors';
+
+:local(.component) {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+
+    .tag {
+        border: solid 2px $green;
+        border-radius: 20px;
+        color: $green-active;
+        padding: 5px 15px;
+        margin-right: 5px;
+
+        .hashtag {
+            color: $green;
+            padding-right: 5px;
+        }
+    }
+}
