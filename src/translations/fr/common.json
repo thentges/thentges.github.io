@@ -5,5 +5,8 @@
             "primary": "ce bouton ne fait rien",
             "secondary": "celui-ci non plus"
         }
+    },
+    "skills": {
+        "title": "Compétences techniques"
     }
 }

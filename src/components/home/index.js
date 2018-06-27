@@ -3,6 +3,7 @@ import style from './style.scss'
 import { Button } from 'semantic-ui-react'
 import logo from './thentges_logo.png'
 import { translate } from 'react-i18next';
+import Tags from '../tags'
 
 class Home extends Component {
     render() {
@@ -24,8 +25,9 @@ class Home extends Component {
                         {'Samuel L Ipsum from '}
                         <a href="http://slipsum.com/">{'http://slipsum.com/'}</a>
                     </div>
+                    <Tags list={["TAG1", "TAG2", "TAG3"]} />
                 </div>
-                <div>
+                <div className="buttons">
                     <Button primary>{t('home.buttons.primary')}</Button>
                     <Button secondary>{t('home.buttons.secondary')}</Button>
                 </div>

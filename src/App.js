@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Home from './components/home'
 import style from './styles/app.scss'
 import Header from './components/header'
+import Skills from './components/skills'
 
 class App extends React.Component {
     constructor(props){
@@ -48,7 +49,7 @@ class App extends React.Component {
             <div className={style.component} ref='app' >
                 <Header showNav={this.state.show_navigation_on_header} />
                 <Home ref='home_component' />
-                <Home />
+                <Skills />
             </div>
         );
     }
