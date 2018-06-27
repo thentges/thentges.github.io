@@ -14,7 +14,7 @@ class LanguageSelector extends React.Component {
         const ENGLISH = 'English (EN)'
 
         return (
-            <div className={style.component} >
+            <div className={style.component}>
                 <LangItem isSelected={lang === 'fr'}
                     changeLanguage={this.changeLanguage.bind(this, 'fr')}>
                     {FRENCH}

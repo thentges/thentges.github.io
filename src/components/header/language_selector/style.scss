@@ -1,4 +1,4 @@
-@import '../../styles/colors';
+@import '../../../styles/colors';
 
 @mixin underline($color, $width, $right) {
     transition: width 0.4s ease;
@@ -16,7 +16,7 @@
     color: $green;
     position: fixed;
     display: flex;
-    right: 0;
+    right: 5px;
     padding: 5px 10px;
     flex: 0 0 100px;
 
