@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import style from './style.scss'
 import { Button } from 'semantic-ui-react'
-import logo from './thentges_logo.png'
+import logo from '../../images/thentges_logo.png'
 import { translate } from 'react-i18next';
 import Tags from '../ui/tags'
 
@@ -13,7 +13,7 @@ class Home extends Component {
         return (
             <div className={style.component}>
                 <div>
-                    <img  className="logo" src={logo} alt={'thentges avatar'} />
+                    <img className="logo" src={logo} alt={'thentges avatar'} />
                 </div>
                 <h1>
                      { t('home.title', { name: "Thibault" }) }
