@@ -4,6 +4,8 @@
     padding-bottom: 20px;
     min-height:100vh;
     padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 
     .flex-container {
         display: flex;
@@ -24,6 +26,7 @@
 
     .subtitle {
         font-size: 2em;
+        line-height: 1;
         color: $dark-grey;
     }
 
@@ -34,12 +37,12 @@
         color: $dark-grey;
         margin-bottom: 15px;
         line-height: 1.1;
-        margin-left: 20%;
-        margin-right: 20%;
+        text-align: justify;
     }
 
     .tags {
-        float: right;
+        margin-top: 10px;
+        flex-direction: row-reverse;
     }
 
     /*.buttons {

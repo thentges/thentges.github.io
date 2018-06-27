@@ -14,5 +14,13 @@
     },
     "skills": {
         "title": "Technical skills"
+    },
+    "tags": {
+        "engineer": "engineer",
+        "web": "web",
+        "best_practices": "best practices",
+        "dev": "development",
+        "full_stack": "full-stack",
+        "back": "back-end"
     }
 }

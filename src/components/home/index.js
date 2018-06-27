@@ -17,8 +17,8 @@ class Home extends Component {
 
         const { t } = this.props;
         const tag_list = [
-            t('tags.engineer'), t('tags.dev'), t('tags.web'), t('tags.full_stack'),
-            t('tags.best_practices'), t('tags.back')
+            t('tags.back'), t('tags.best_practices'), t('tags.full_stack'),
+            t('tags.web'), t('tags.dev'), t('tags.engineer')
         ]
 
         return (
