@@ -1,0 +1,10 @@
+@import '../../../styles/colors';
+
+:local(.component) {
+    color: $green;
+    position: fixed;
+    display: flex;
+    left: 5px;
+    padding: 5px 10px;
+    flex: 0 0 100px;
+}

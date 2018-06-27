@@ -1,4 +1,8 @@
 {
+    "nav": {
+        "top": "Haut",
+        "skills": "Compétences"
+    },
     "home": {
         "title": "Salut, je suis {{ name }}",
         "buttons": {

@@ -5,8 +5,8 @@ import Tag from './tag'
 class Tags extends Component {
     render() {
         const tags = this.props.list.map(
-            (tag) => {
-                return <Tag>{tag}</Tag>
+            (tag,i) => {
+                return <Tag key={tag+i}>{tag}</Tag>
             }
         )
 
