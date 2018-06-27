@@ -14,14 +14,19 @@
         height: 250px;
     }
 
+    .title {
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-size: 2em;
+    }
+
     .about {
+        margin-top: 15px;
         margin-bottom: 15px;
         margin-left: 20%;
         margin-right: 20%;
-    }
-
-    .quote {
-        text-align: right;
     }
 
     .buttons {
