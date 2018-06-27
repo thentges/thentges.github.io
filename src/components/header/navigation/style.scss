@@ -7,4 +7,14 @@
     left: 5px;
     padding: 5px 10px;
     flex: 0 0 100px;
+
+    .logo {
+        height: 25px;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .nav {
+        margin-left: 25px;
+    }
 }
