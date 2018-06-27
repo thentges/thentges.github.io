@@ -5,8 +5,9 @@
     flex-direction: row;
     width:100%;
 
-    .tag {display:flex;
-vertical-align: center;
+    .tag {
+        display:flex;
+        vertical-align: center;
         border: solid 2px $green;
         border-radius: 20px;
         color: $green-active;
