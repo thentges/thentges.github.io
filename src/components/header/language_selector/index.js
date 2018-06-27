@@ -6,6 +6,8 @@ import Item from '../item'
 class LanguageSelector extends React.Component {
     changeLanguage(lang) {
         this.props.i18n.changeLanguage(lang);
+        if (localStorage)
+            localStorage.setItem('lang', lang);
     }
 
     render() {

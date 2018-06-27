@@ -13,13 +13,22 @@ const AppContainer = () => (
     </I18nextProvider>
 )
 
-const lang = navigator && navigator.language ?
-    navigator.language.substr(0, 2) : 'en';
-
+const getLanguage = () => {
+    let lang
+    // taking saved lang in localStorage or navigator language
+    if (localStorage && localStorage.getItem('lang'))
+        lang = localStorage.getItem('lang')
+    else if (navigator && navigator.language)
+        lang = navigator.language.substr(0,2)
+    // if it's not one of the lang we support, put english
+    if (lang !== 'en' && lang !== 'fr')
+        lang = 'en'
+    return lang;
+}
 
 i18next.init({
     interpolation: { escapeValue: false },
-    lng: lang,
+    lng: getLanguage(),
     resources: {
         en: {
             common: common_en
