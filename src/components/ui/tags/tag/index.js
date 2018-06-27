@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Check from 'react-feather/dist/icons/check';
 
 class Tag extends Component {
     render() {
         return (
             <div className="tag">
-                <span className="hashtag">#</span>
+                <Check className='hashtag' size='20' />
                 {this.props.children}
             </div>
         )
