@@ -1,0 +1,32 @@
+@import '../../../styles/colors';
+
+:local(.component) {
+    display: flex;
+    flex: 0 0 100%;
+    height: 100%;
+
+    .wrapper:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 96%;
+        height: 5px;
+
+    }
+
+    .wrapper {
+        display:block;
+        position:relative;
+        width: 100%;
+    }
+
+    .wrapper-white {
+        @extend .wrapper;
+        color: white;
+    }
+    .wrapper-white:before {
+        @extend .wrapper:before;
+        background: white;
+    }
+
+}
