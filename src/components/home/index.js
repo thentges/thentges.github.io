@@ -3,7 +3,7 @@ import style from './style.scss'
 import { Button } from 'semantic-ui-react'
 import logo from './thentges_logo.png'
 import { translate } from 'react-i18next';
-import Tags from '../tags'
+import Tags from '../ui/tags'
 
 class Home extends Component {
     render() {
