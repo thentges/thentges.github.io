@@ -11,6 +11,7 @@
         }
     },
     "skills": {
-        "title": "Technical skills"
+        "title": "Technical skills",
+        "languages": "Languages"
     }
 }

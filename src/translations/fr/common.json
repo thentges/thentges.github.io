@@ -11,6 +11,7 @@
         }
     },
     "skills": {
-        "title": "Compétences techniques"
+        "title": "Compétences techniques",
+        "languages": "Langages"
     }
 }
