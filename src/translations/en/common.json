@@ -5,6 +5,8 @@
     },
     "home": {
         "title": "Hi, I'm {{ name }}",
+        "subtitle": "Software Engineering student at ",
+                "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a backend or full-stack developper.",
         "buttons": {
             "primary": "this button does nothing",
             "secondary": "neither does this one"
