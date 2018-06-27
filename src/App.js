@@ -9,47 +9,53 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            show_navigation_on_header: false
+            current_page: null,
+            start_positions: {
+                home: 0,
+                skills: 0
+            }
         }
     }
 
-    getHomePosition(){
-        const home_node = ReactDOM.findDOMNode(this.refs.home_component);
-        const home_position = home_node.getBoundingClientRect();
-        return home_position.height;
+    getPosition(ref){
+        const node = ReactDOM.findDOMNode(ref);
+        return {start: node.offsetTop, end: node.offsetTop + node.offsetHeight};
+    }
+
+    updatePositions(){
+        console.log("SCROLLED");
+        const current_position = window.scrollY
+        const home_positions = this.getPosition(this.refs.home_component)
+        const skills_positions = this.getPosition(this.refs.skills_component)
+
+        let current_page
+        if (current_position < home_positions.end)
+            current_page = 'home'
+        else if (current_position < skills_positions.end)
+            current_page = 'skills'
+
+        this.setState({current_page, start_positions: {
+            home: home_positions.start,
+            skills: skills_positions.start
+        }})
     }
 
     componentDidMount() {
-        const home_position = this.getHomePosition();
-        this.setState({
-            show_navigation_on_header: home_position < window.scrollY
-        });
-        window.addEventListener('scroll', this.handleScroll.bind(this));
+        this.updatePositions();
+        window.addEventListener('scroll', this.updatePositions.bind(this));
     }
 
     componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    handleScroll(e) {
-        const position = window.scrollY;
-        const home_position = this.getHomePosition();
-        console.log("pos" + position);
-        // console.log(home_position);
-        if (position >= home_position) {
-            this.setState({show_navigation_on_header: true});
-        }
-        else if (position < home_position)
-            this.setState({show_navigation_on_header: false});
+        window.removeEventListener('scroll', this.updatePositions.bind(this));
     }
 
     render() {
-
         return (
-            <div className={style.component} ref='app' >
-                <Header showNav={this.state.show_navigation_on_header} />
+            <div className={style.component}>
+                <Header showNav={this.state.current_page !== 'home'}
+                    currentPage={this.state.current_page} positions={this.state.start_positions} />
                 <Home ref='home_component' />
-                <Skills />
+                <Skills ref='skills_component' />
             </div>
         );
     }
