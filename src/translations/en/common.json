@@ -10,7 +10,9 @@
     },
     "skills": {
         "title": "Technical skills",
-        "languages": "Languages"
+        "languages": "Languages",
+        "databases": "Databases",
+        "unit_testing": "Unit testing"
     },
     "tags": {
         "engineer": "engineer",

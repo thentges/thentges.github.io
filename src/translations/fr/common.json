@@ -9,7 +9,9 @@
     },
     "skills": {
         "title": "Compétences techniques",
-        "languages": "Langages"
+        "languages": "Langages",
+        "databases": "Bases de données",
+        "unit_testing": "Tests unitaires"
     },
     "tags": {
         "engineer": "ingénieur",
