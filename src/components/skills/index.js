@@ -8,6 +8,11 @@ import BackEndCards from './back';
 import FrontEndCards from './front';
 import DataBaseCards from './databases';
 import TestsCard from './tests';
+import CheckCircle from 'react-feather/dist/icons/check-circle';
+import Database from 'react-feather/dist/icons/database';
+import HardDrive from 'react-feather/dist/icons/hard-drive';
+import Chrome from 'react-feather/dist/icons/chrome';
+import Code from 'react-feather/dist/icons/code';
 
 class Skills extends Component {
     render() {
@@ -15,16 +20,30 @@ class Skills extends Component {
         return (
             <div className={style.component}>
                 <BlockTitle color='white'>{t('skills.title')}</BlockTitle>
-                <SubTitle color='white'>{t('skills.languages')}</SubTitle>
-                    <LanguagesCards />
-                <SubTitle color='white'>Back-end</SubTitle>
-                    <BackEndCards />
-                <SubTitle color='white'>Front-end</SubTitle>
-                    <FrontEndCards />
-                <SubTitle color='white'>{t('skills.databases')}</SubTitle>
-                    <DataBaseCards />
-                <SubTitle color='white'>{t('skills.unit_testing')}</SubTitle>
-                    <TestsCard />
+                <SubTitle color='white'>
+                    <Code className='subtitle-icon' /> {t('skills.languages')}
+                </SubTitle>
+                <LanguagesCards />
+
+                <SubTitle color='white'>
+                    <HardDrive className='subtitle-icon' /> Back-end
+                </SubTitle>
+                <BackEndCards />
+
+                <SubTitle color='white'>
+                    <Chrome className='subtitle-icon' /> Front-end
+                </SubTitle>
+                <FrontEndCards />
+
+                <SubTitle color='white'>
+                    <Database className='subtitle-icon' /> {t('skills.databases')}
+                </SubTitle>
+                <DataBaseCards />
+
+                <SubTitle color='white'>
+                    <CheckCircle className='subtitle-icon' /> {t('skills.unit_testing')}
+                </SubTitle>
+                <TestsCard />
             </div>
         );
     }
