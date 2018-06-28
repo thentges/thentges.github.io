@@ -54,7 +54,7 @@ class App extends React.Component {
             <div className={style.component}>
                 <Header showNav={this.state.current_page !== 'home'}
                     currentPage={this.state.current_page} positions={this.state.start_positions} />
-                <Home ref='home_component' />
+                <Home ref='home_component' positions={this.state.start_positions} />
                 <Skills ref='skills_component' />
             </div>
         );

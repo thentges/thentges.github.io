@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import style from './style.scss'
-import { Button } from 'semantic-ui-react'
 import logo from '../../images/thentges_logo.png'
 import { translate } from 'react-i18next';
 import Tags from '../ui/tags'
 import HomeNav from './navigation'
-
-// <div className="buttons">
-//     <Button primary>{t('home.buttons.primary')}</Button>
-//     <Button secondary>{t('home.buttons.secondary')}</Button>
-// </div>
-
 
 class Home extends Component {
     render() {
@@ -35,7 +28,7 @@ class Home extends Component {
                         <div>{t('home.about')}</div>
                         <Tags className='tags' list={tag_list} />
                     </div>
-                    <HomeNav />
+                    <HomeNav positions={this.props.positions} />
                 </div>
             </div>
         );
