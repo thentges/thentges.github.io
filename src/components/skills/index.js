@@ -11,6 +11,8 @@ class Skills extends Component {
         return (
             <div className={style.component}>
                 <BlockTitle color='white'>{t('skills.title')}</BlockTitle>
+                <SubTitle color='white'>{t('skills.languages')}</SubTitle>
+
                 <SubTitle color='white'>Back-end</SubTitle>
                     <BackEndSkills />
                 <SubTitle color='white'>Front-end</SubTitle>

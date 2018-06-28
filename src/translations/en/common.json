@@ -9,7 +9,8 @@
         "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a backend or full-stack developper."
     },
     "skills": {
-        "title": "Technical skills"
+        "title": "Technical skills",
+        "languages": "Languages"
     },
     "tags": {
         "engineer": "engineer",

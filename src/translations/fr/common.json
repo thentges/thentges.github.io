@@ -8,7 +8,8 @@
         "about": "J’adore découvrir et apprendre de nouvelles technologies, essayant au maximum de suivre les bonnes pratiques de développement. Je suis particulièrement attiré par le développement web et me considère comme un développeur back-end ou bien full-stack."
     },
     "skills": {
-        "title": "Compétences techniques"
+        "title": "Compétences techniques",
+        "languages": "Langages"
     },
     "tags": {
         "engineer": "ingénieur",
