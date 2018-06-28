@@ -3,7 +3,11 @@ import style from './style.scss'
 import BlockTitle from '../ui/block_title'
 import SubTitle from '../ui/sub_title'
 import { translate } from 'react-i18next';
-import BackEndSkills from './backend'
+import LanguagesCards from './languages';
+import BackEndCards from './back';
+import FrontEndCards from './front';
+import DataBaseCards from './databases';
+import TestsCard from './tests';
 
 class Skills extends Component {
     render() {
@@ -12,10 +16,15 @@ class Skills extends Component {
             <div className={style.component}>
                 <BlockTitle color='white'>{t('skills.title')}</BlockTitle>
                 <SubTitle color='white'>{t('skills.languages')}</SubTitle>
-
+                    <LanguagesCards />
                 <SubTitle color='white'>Back-end</SubTitle>
-                    <BackEndSkills />
+                    <BackEndCards />
                 <SubTitle color='white'>Front-end</SubTitle>
+                    <FrontEndCards />
+                <SubTitle color='white'>{t('skills.databases')}</SubTitle>
+                    <DataBaseCards />
+                <SubTitle color='white'>{t('skills.unit_testing')}</SubTitle>
+                    <TestsCard />
             </div>
         );
     }
