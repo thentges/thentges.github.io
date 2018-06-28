@@ -4,6 +4,9 @@
     padding: 20px;
     min-height:100vh;
     display: flex;
+    @media (pointer: coarse) {
+        display: block;
+    }
     flex-direction: column;
     background: $light-green;
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0 100%);
