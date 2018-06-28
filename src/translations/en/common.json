@@ -5,12 +5,18 @@
     },
     "home": {
         "title": "Hi, I'm {{ name }}",
-        "buttons": {
-            "primary": "this button does nothing",
-            "secondary": "neither does this one"
-        }
+        "subtitle": "Software Engineering student at ",
+        "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a backend or full-stack developper."
     },
     "skills": {
         "title": "Technical skills"
+    },
+    "tags": {
+        "engineer": "engineer",
+        "web": "web",
+        "best_practices": "best practices",
+        "dev": "development",
+        "full_stack": "full-stack",
+        "back": "back-end"
     }
 }

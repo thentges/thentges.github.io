@@ -3,9 +3,11 @@
 :local(.component) {
     display: flex;
     flex-direction: row;
-    width:100%;
-
+    flex-wrap: wrap;
+    align-self: stretch;
+    
     .tag {
+        font-size: 12px;
         display:flex;
         vertical-align: center;
         border: solid 2px $green;
@@ -13,6 +15,7 @@
         color: $green-active;
         padding: 5px 15px;
         margin-right: 5px;
+        margin-bottom:5px;
 
         .hashtag {
             color: $green;

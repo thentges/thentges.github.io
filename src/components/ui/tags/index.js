@@ -11,7 +11,7 @@ class Tags extends Component {
         )
 
         return (
-            <div className={style.component}>
+            <div className={style.component + ' ' + this.props.className}>
                 {tags}
             </div>
         )

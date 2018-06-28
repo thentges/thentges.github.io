@@ -5,7 +5,7 @@ class Tag extends Component {
     render() {
         return (
             <div className="tag">
-                <Check className='hashtag' size='20' />
+                <Check className='hashtag' size='15' />
                 {this.props.children}
             </div>
         )

@@ -1,16 +1,21 @@
 {
     "nav": {
-        "top": "Haut",
         "skills": "Compétences"
     },
     "home": {
         "title": "Salut, je suis {{ name }}",
-        "buttons": {
-            "primary": "ce bouton ne fait rien",
-            "secondary": "celui-ci non plus"
-        }
+        "subtitle": "Étudiant Ingénieur Logiciel à l'",
+        "about": "J’adore découvrir et apprendre de nouvelles technologies, essayant au maximum de suivre les bonnes pratiques de développement. Je suis particulièrement attiré par le développement web et me considère comme un développeur back-end ou bien full-stack."
     },
     "skills": {
         "title": "Compétences techniques"
+    },
+    "tags": {
+        "engineer": "ingénieur",
+        "web": "web",
+        "best_practices": "bonnes pratiques",
+        "dev": "développement",
+        "full_stack": "full-stack",
+        "back": "back-end"
     }
 }

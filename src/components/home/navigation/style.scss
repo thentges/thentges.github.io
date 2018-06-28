@@ -1,0 +1,53 @@
+@import '../../../styles/colors';
+
+$transition_time : 0.6s;
+
+:local(.component){
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .button {
+        background: $green;
+        border-radius: 5px;
+        font-size: 1.5em;
+        position: relative;
+        width: 250px;
+        height: 40px;
+        margin: 5px;
+        overflow: hidden;
+        color: white;
+        cursor: pointer;
+    }
+
+    .icon {
+        transition: transform $transition_time ease;
+        position: absolute;
+        text-align:center;
+        width:100%;
+        top: 8px;
+        transform: translateY(-40px);
+    }
+
+    .text {
+        transition: transform $transition_time ease;
+        position:absolute;
+        text-align:center;
+        width:100%;
+        top: 8px;
+    }
+
+    .button:hover .icon {
+        transform: none;
+    }
+
+    .button:hover .text {
+        transform: translateY(40px);
+    }
+
+    .button:hover {
+        transition: background $transition_time ease;
+        background: $green_hover;
+    }
+
+}

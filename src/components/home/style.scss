@@ -1,30 +1,47 @@
 @import '../../styles/colors';
 
 :local(.component) {
-    padding-top: 20px;
-    min-height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: $light-grey;
     padding-bottom: 20px;
+    min-height:100vh;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $light-grey;
+    }
 
     .logo {
         height: 250px;
     }
 
+    .title {
+        color: $darker-grey;
+        margin-bottom:10px;
+    }
+
+    .subtitle {
+        font-size: 2em;
+        line-height: 1;
+        color: $dark-grey;
+    }
+
     .about {
+        flex-basis:100%;
+        margin-top: 10px;
+        font-size: 1.5em;
+        color: $dark-grey;
         margin-bottom: 15px;
-        margin-left: 20%;
-        margin-right: 20%;
+        line-height: 1.1;
+        text-align: justify;
     }
 
-    .quote {
-        text-align: right;
-    }
-
-    .buttons {
-        text-align:center;
+    .tags {
+        margin-top: 10px;
+        flex-direction: row-reverse;
     }
 }
