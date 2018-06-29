@@ -21,7 +21,7 @@
         "appartoo": {
             "dates": "july to december 2017",
             "status": "Full-stack web developer",
-            "description": "héhé"
+            "description": "Participation in the development of a linking application to search for a colocation.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not."
         }
     },
     "tags": {
@@ -30,6 +30,12 @@
         "best_practices": "best practices",
         "dev": "development",
         "full_stack": "full-stack",
-        "back": "back-end"
+        "back": "back-end",
+        "front": "front-end",
+        "nginx": "NGiNX",
+        "mySQL": "mySQL",
+        "angularJS": "angularJS",
+        "symfony": "Symfony",
+        "api": "API"
     }
 }
