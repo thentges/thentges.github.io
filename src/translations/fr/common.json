@@ -35,7 +35,9 @@
         "nginx": "NGiNX",
         "mySQL": "mySQL",
         "angularJS": "angularJS",
-        "symfony": "Symfony",
-        "api": "API"
+        "symfony": "symfony",
+        "api": "API",
+        "php": "PHP",
+        "js": "JavaScript"
     }
 }
