@@ -5,11 +5,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-self: stretch;
-    
+
     .tag {
+        line-height: 1.1;
         font-size: 12px;
         display:flex;
-        vertical-align: center;
         border: solid 2px $green;
         border-radius: 20px;
         color: $green-active;
@@ -20,6 +20,14 @@
         .hashtag {
             color: $green;
             padding-right: 5px;
+        }
+
+        &.inverted {
+            color: white;
+            background: $green;
+            .hashtag {
+                color: white;
+            }
         }
     }
 }

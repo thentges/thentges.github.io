@@ -16,7 +16,13 @@
         "others": "Others"
     },
     "exp": {
-        "title": "Experiences"
+        "title": "Experiences",
+        "intern": "Internship at {{ enterprise }}",
+        "appartoo": {
+            "dates": "july to december 2017",
+            "status": "Full-stack web developer",
+            "description": "héhé"
+        }
     },
     "tags": {
         "engineer": "engineer",

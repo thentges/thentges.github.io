@@ -52,7 +52,7 @@ class Skills extends Component {
                     <PlusCircle className='subtitle-icon' /> {t('skills.others')}
                 </SubTitle>
                 <OthersCards />
-                      
+
             </div>
         );
     }

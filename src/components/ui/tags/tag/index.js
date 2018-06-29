@@ -4,7 +4,7 @@ import Check from 'react-feather/dist/icons/check';
 class Tag extends Component {
     render() {
         return (
-            <div className="tag">
+            <div className={"tag " + this.props.className}>
                 <Check className='hashtag' size='15' />
                 {this.props.children}
             </div>
