@@ -7,9 +7,6 @@ import LanguagesCards from './languages';
 import BackEndCards from './back';
 import FrontEndCards from './front';
 import DataBaseCards from './databases';
-<<<<<<< Updated upstream
-import TestsCard from './tests';
-=======
 import TestsCards from './tests';
 import OthersCards from './others';
 import CheckCircle from 'react-feather/dist/icons/check-circle';
@@ -18,7 +15,6 @@ import HardDrive from 'react-feather/dist/icons/hard-drive';
 import Chrome from 'react-feather/dist/icons/chrome';
 import Code from 'react-feather/dist/icons/code';
 import PlusCircle from 'react-feather/dist/icons/plus-circle';
->>>>>>> Stashed changes
 
 class Skills extends Component {
     render() {
@@ -26,18 +22,7 @@ class Skills extends Component {
         return (
             <div className={style.component}>
                 <BlockTitle color='white'>{t('skills.title')}</BlockTitle>
-<<<<<<< Updated upstream
-                <SubTitle color='white'>{t('skills.languages')}</SubTitle>
-                    <LanguagesCards />
-                <SubTitle color='white'>Back-end</SubTitle>
-                    <BackEndCards />
-                <SubTitle color='white'>Front-end</SubTitle>
-                    <FrontEndCards />
-                <SubTitle color='white'>{t('skills.databases')}</SubTitle>
-                    <DataBaseCards />
-                <SubTitle color='white'>{t('skills.unit_testing')}</SubTitle>
-                    <TestsCard />
-=======
+
                 <SubTitle color='white'>
                     <Code className='subtitle-icon' /> {t('skills.languages')}
                 </SubTitle>
@@ -67,7 +52,7 @@ class Skills extends Component {
                     <PlusCircle className='subtitle-icon' /> {t('skills.others')}
                 </SubTitle>
                 <OthersCards />
->>>>>>> Stashed changes
+                      
             </div>
         );
     }
