@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.scss'
 
-class Card extends React.Component {
+class SkillCard extends React.Component {
     render() {
         return (
             <div className={style.component}>
@@ -16,4 +16,4 @@ class Card extends React.Component {
     }
 }
 
-export default Card;
+export default SkillCard;

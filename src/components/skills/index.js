@@ -7,12 +7,14 @@ import LanguagesCards from './languages';
 import BackEndCards from './back';
 import FrontEndCards from './front';
 import DataBaseCards from './databases';
-import TestsCard from './tests';
+import TestsCards from './tests';
+import OthersCards from './others';
 import CheckCircle from 'react-feather/dist/icons/check-circle';
 import Database from 'react-feather/dist/icons/database';
 import HardDrive from 'react-feather/dist/icons/hard-drive';
 import Chrome from 'react-feather/dist/icons/chrome';
 import Code from 'react-feather/dist/icons/code';
+import PlusCircle from 'react-feather/dist/icons/plus-circle';
 
 class Skills extends Component {
     render() {
@@ -20,6 +22,7 @@ class Skills extends Component {
         return (
             <div className={style.component}>
                 <BlockTitle color='white'>{t('skills.title')}</BlockTitle>
+
                 <SubTitle color='white'>
                     <Code className='subtitle-icon' /> {t('skills.languages')}
                 </SubTitle>
@@ -43,7 +46,13 @@ class Skills extends Component {
                 <SubTitle color='white'>
                     <CheckCircle className='subtitle-icon' /> {t('skills.unit_testing')}
                 </SubTitle>
-                <TestsCard />
+                <TestsCards />
+
+                <SubTitle color='white'>
+                    <PlusCircle className='subtitle-icon' /> {t('skills.others')}
+                </SubTitle>
+                <OthersCards />
+                      
             </div>
         );
     }

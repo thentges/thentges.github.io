@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from '../../ui/card';
+import Card from '../card';
 import junit_img from '../../../images/junit.png'
 import mocha_img from '../../../images/mocha.svg'
 import chai_img from '../../../images/chai.svg'
 import circleci_img from '../../../images/circleci.svg'
 
-class TestsCard extends React.Component {
+class TestsCards extends React.Component {
     render() {
         return (
             <div className='cards-container'>
@@ -18,4 +18,4 @@ class TestsCard extends React.Component {
     }
 }
 
-export default TestsCard;
+export default TestsCards;

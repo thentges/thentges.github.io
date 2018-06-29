@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../ui/card';
+import Card from '../card';
 import php_img from '../../../images/php.svg'
 import java_img from '../../../images/java.svg'
 import js_img from '../../../images/javascript.svg'

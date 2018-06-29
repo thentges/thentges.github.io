@@ -11,7 +11,8 @@
         "title": "Compétences techniques",
         "languages": "Langages",
         "databases": "Bases de données",
-        "unit_testing": "Tests unitaires"
+        "unit_testing": "Tests unitaires",
+        "others": "Autres"
     },
     "tags": {
         "engineer": "ingénieur",
