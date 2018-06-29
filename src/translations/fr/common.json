@@ -1,6 +1,7 @@
 {
     "nav": {
-        "skills": "Compétences"
+        "skills": "Compétences",
+        "exp": "Expériences"
     },
     "home": {
         "title": "Salut, je suis {{ name }}",
@@ -13,6 +14,9 @@
         "databases": "Bases de données",
         "unit_testing": "Tests unitaires",
         "others": "Autres"
+    },
+    "exp": {
+        "title": "Expériences"
     },
     "tags": {
         "engineer": "ingénieur",

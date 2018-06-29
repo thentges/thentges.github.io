@@ -4,6 +4,7 @@ import HomeButton from './home_btn'
 import { translate } from 'react-i18next';
 // import Package from 'react-feather/dist/icons/package';
 import Share2 from 'react-feather/dist/icons/share-2';
+import BriefCase from 'react-feather/dist/icons/briefcase';
 
 class HomeNav extends React.Component {
     goTo(position){
@@ -13,6 +14,7 @@ class HomeNav extends React.Component {
     render(){
         const {t} = this.props
         const skills_icon = <Share2 />
+        const exp_icon = <BriefCase />
         // const project_icon = <Package />
 
         return (
@@ -20,6 +22,10 @@ class HomeNav extends React.Component {
                 <HomeButton icon={skills_icon}
                     handleClick={this.goTo.bind(this, this.props.positions.skills)}>
                     {t('nav.skills')}
+                </HomeButton>
+                <HomeButton icon={exp_icon}
+                    handleClick={this.goTo.bind(this, this.props.positions.exp)}>
+                    {t('nav.exp')}
                 </HomeButton>
                 {/*<HomeButton icon={project_icon}>Projets</HomeButton>*/}
             </div>

@@ -1,7 +1,7 @@
 {
     "nav": {
-        "top": "Top",
-        "skills": "Skills"
+        "skills": "Skills",
+        "exp": "Experiences"
     },
     "home": {
         "title": "Hi, I'm {{ name }}",
@@ -14,6 +14,9 @@
         "databases": "Databases",
         "unit_testing": "Unit testing",
         "others": "Others"
+    },
+    "exp": {
+        "title": "Experiences"
     },
     "tags": {
         "engineer": "engineer",

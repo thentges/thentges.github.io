@@ -4,6 +4,7 @@ import Home from './components/home'
 import style from './styles/app.scss'
 import Header from './components/header'
 import Skills from './components/skills'
+import Experiences from './components/experiences'
 
 class App extends React.Component {
     constructor(props){
@@ -12,7 +13,8 @@ class App extends React.Component {
             current_page: null,
             start_positions: {
                 home: 0,
-                skills: 0
+                skills: 0,
+                exp: 0
             }
         }
     }
@@ -23,20 +25,23 @@ class App extends React.Component {
     }
 
     updatePositions(){
-        console.log("SCROLLED");
         const current_position = window.scrollY
         const home_positions = this.getPosition(this.refs.home_component)
         const skills_positions = this.getPosition(this.refs.skills_component)
+        const exp_positions = this.getPosition(this.refs.exp_component)
 
         let current_page
         if (current_position < home_positions.end)
             current_page = 'home'
         else if (current_position < skills_positions.end)
             current_page = 'skills'
+        else if (current_position < exp_positions.end)
+            current_page = 'exp'
 
         this.setState({current_page, start_positions: {
             home: home_positions.start,
-            skills: skills_positions.start
+            skills: skills_positions.start,
+            exp: exp_positions.start
         }})
     }
 
@@ -56,6 +61,7 @@ class App extends React.Component {
                     currentPage={this.state.current_page} positions={this.state.start_positions} />
                 <Home ref='home_component' positions={this.state.start_positions} />
                 <Skills ref='skills_component' />
+                <Experiences ref='exp_component' />
             </div>
         );
     }

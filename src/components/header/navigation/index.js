@@ -15,11 +15,15 @@ class Navigation extends React.Component {
             <div className={style.component}>
                 <img className="logo" src={logo} alt={'thentges avatar'}
                     onClick={this.goTo.bind(this, this.props.positions.home)} />
-                
+
                 <div className="nav">
                     <Item isSelected={this.props.currentPage === 'skills'}
                         handleClick={this.goTo.bind(this, this.props.positions.skills)}>
                         {t('nav.skills')}
+                    </Item>
+                    <Item isSelected={this.props.currentPage === 'exp'}
+                        handleClick={this.goTo.bind(this, this.props.positions.exp)}>
+                        {t('nav.exp')}
                     </Item>
                 </div>
             </div>
