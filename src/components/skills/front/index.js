@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../ui/card';
+import Card from '../card';
 import angular_img from '../../../images/angular.svg'
 import react_img from '../../../images/react.svg'
 import redux_img from '../../../images/redux.svg'

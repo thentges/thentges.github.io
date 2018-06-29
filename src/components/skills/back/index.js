@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../ui/card';
+import Card from '../card';
 import spring_img from '../../../images/spring.svg'
 import symfony_img from '../../../images/symfony.svg'
 import node_img from '../../../images/nodejs.svg'

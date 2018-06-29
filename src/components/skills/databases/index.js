@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../ui/card';
+import Card from '../card';
 import mysql_img from '../../../images/mysql.svg'
 import postgres_img from '../../../images/postgres.svg'
 import mongo_img from '../../../images/mongo.svg'

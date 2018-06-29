@@ -12,7 +12,8 @@
         "title": "Technical skills",
         "languages": "Languages",
         "databases": "Databases",
-        "unit_testing": "Unit testing"
+        "unit_testing": "Unit testing",
+        "others": "Others"
     },
     "tags": {
         "engineer": "engineer",
