@@ -1,21 +1,28 @@
 @import '../../../styles/colors';
 
+$breakpoint: 760px;
+
 :local(.component) {
-    color: $green;
-    position: fixed;
-    display: flex;
-    left: 5px;
-    padding: 5px 10px;
-    flex: 0 0 100px;
-
-    .logo {
-        height: 25px;
-        cursor: pointer;
+    .laptop-menu {
+        @media (max-width: $breakpoint){
+            display: none;
+        }
+        color: $green;
         position: fixed;
-    }
-
-    .nav {
-        margin-left: 25px;
         display: flex;
+        left: 5px;
+        padding: 5px 10px;
+        flex: 0 0 100px;
+
+        .logo {
+            height: 25px;
+            cursor: pointer;
+            position: fixed;
+        }
+
+        .nav {
+            margin-left: 25px;
+            display: flex;
+        }
     }
 }
