@@ -7,7 +7,7 @@ class Header extends React.Component {
     render() {
         const navBar = this.props.showNav ?
         <Navigation currentPage={this.props.currentPage}
-            positions={this.props.positions} /> : '';
+            goTo={this.props.goTo} /> : '';
 
         return (
             <div className={style.component}>

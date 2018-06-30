@@ -28,7 +28,7 @@ class Home extends Component {
                         <div>{t('home.about')}</div>
                         <Tags className='tags' list={tag_list} />
                     </div>
-                    <HomeNav positions={this.props.positions} />
+                    <HomeNav goTo={this.props.goTo} />
                 </div>
             </div>
         );
