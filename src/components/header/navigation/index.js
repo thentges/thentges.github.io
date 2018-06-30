@@ -1,13 +1,15 @@
 import React from 'react';
 import style from './style.scss'
 import LaptopNav from './laptop'
+import MobileNav from './mobile'
 
 class Navigation extends React.Component {
     render() {
-        const {t} = this.props;
         return (
             <div className={style.component}>
-                <LaptopNav goTo={this.props.goTo} currentPage={this.props.currentPage} />
+                {this.props.showNav && <LaptopNav goTo={this.props.goTo} currentPage={this.props.currentPage} />}
+                <MobileNav goTo={this.props.goTo} currentPage={this.props.currentPage}
+                    isMobileMenuShowing={this.props.isMobileMenuShowing} toggleMobileMenu={this.props.toggleMobileMenu} />
             </div>
         );
     }

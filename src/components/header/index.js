@@ -5,14 +5,13 @@ import Navigation from './navigation'
 
 class Header extends React.Component {
     render() {
-        const navBar = this.props.showNav ?
-        <Navigation currentPage={this.props.currentPage}
-            goTo={this.props.goTo} /> : '';
-
         return (
             <div className={style.component}>
                 <LanguageSelector />
-                {navBar}
+                <Navigation currentPage={this.props.currentPage}
+                    showNav={this.props.showNav} goTo={this.props.goTo}
+                    isMobileMenuShowing={this.props.isMobileMenuShowing}
+                    toggleMobileMenu={this.props.toggleMobileMenu} />
             </div>
         );
     }
