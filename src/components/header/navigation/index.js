@@ -5,24 +5,20 @@ import Item from '../item'
 import logo from '../../../images/thentges_logo.png'
 
 class Navigation extends React.Component {
-    goTo(position){
-        window.scrollTo(0, position);
-    }
-
     render() {
         const {t} = this.props;
         return (
             <div className={style.component}>
                 <img className="logo" src={logo} alt={'thentges avatar'}
-                    onClick={this.goTo.bind(this, this.props.positions.home)} />
+                    onClick={this.props.goTo.home} />
 
                 <div className="nav">
                     <Item isSelected={this.props.currentPage === 'skills'}
-                        handleClick={this.goTo.bind(this, this.props.positions.skills)}>
+                        handleClick={this.props.goTo.skills}>
                         {t('nav.skills')}
                     </Item>
                     <Item isSelected={this.props.currentPage === 'exp'}
-                        handleClick={this.goTo.bind(this, this.props.positions.exp)}>
+                        handleClick={this.props.goTo.exp}>
                         {t('nav.exp')}
                     </Item>
                 </div>

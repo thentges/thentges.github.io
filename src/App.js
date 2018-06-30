@@ -11,12 +11,16 @@ class App extends React.Component {
         super(props);
         this.state = {
             current_page: null,
-            start_positions: {
-                home: 0,
-                skills: 0,
-                exp: 0
+            goTo: {
+                home: null,
+                skills: null,
+                exp: null
             }
         }
+    }
+
+    goTo(position){
+        window.scrollTo(0, position);
     }
 
     getPosition(ref){
@@ -38,10 +42,10 @@ class App extends React.Component {
         else if (current_position < exp_positions.end)
             current_page = 'exp'
 
-        this.setState({current_page, start_positions: {
-            home: home_positions.start,
-            skills: skills_positions.start,
-            exp: exp_positions.start
+        this.setState({current_page, goTo: {
+            home: this.goTo.bind(this, home_positions.start),
+            skills: this.goTo.bind(this, skills_positions.start),
+            exp: this.goTo.bind(this, exp_positions.start)
         }})
     }
 
@@ -58,8 +62,8 @@ class App extends React.Component {
         return (
             <div className={style.component}>
                 <Header showNav={this.state.current_page !== 'home'}
-                    currentPage={this.state.current_page} positions={this.state.start_positions} />
-                <Home ref='home_component' positions={this.state.start_positions} />
+                    currentPage={this.state.current_page} goTo={this.state.goTo} />
+                <Home ref='home_component' goTo={this.state.goTo} />
                 <Skills ref='skills_component' />
                 <Experiences ref='exp_component' />
             </div>
