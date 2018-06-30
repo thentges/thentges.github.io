@@ -18,6 +18,7 @@ class App extends React.Component {
             },
             updatePositions: true,
             is_menu_showing: false,
+            is_menu_showing_css: '',
             current_position: window.scrollY
         }
     }
@@ -67,34 +68,37 @@ class App extends React.Component {
 
     toggleMenu() {
         // we do not update the positions if the menu is showing because
-        // we are fixing the body position at the top to avoid scroll
+        // we are fixing the body position at the top to avoid scroll and that would loose where we were
         const updatePositions = this.state.is_menu_showing;
-        this.setState({is_menu_showing: !this.state.is_menu_showing, updatePositions});
-        // going back to the position saved, if we choose another location the goTo
-        // will be triggered after
-        this.goTo(this.state.current_position);
+        // if we're going to show the menu
+        if (!this.state.is_menu_showing){
+            // we show it and stop updating positions
+            this.setState({is_menu_showing: !this.state.is_menu_showing, updatePositions});
+            // but we wait till the end of the menu animation to disable scrolling on the body
+            setTimeout(() => {
+                this.setState({is_menu_showing_css: 'disable-scroll'})
+            }, 600);
+        }
+        // if we're going to hide the menu
+        else {
+            // we enable scrolling on the menu
+            this.setState({is_menu_showing_css: '', is_menu_showing: !this.state.is_menu_showing, updatePositions},
+            () => {
+                // and then we scroll to the position we saved before disabling the menu
+                this.goTo(this.state.current_position);
+                // if we clicked on a menu item, the next goTo will be triggered after this one
+            });
+        }
     }
 
     render() {
-        let is_mobile_menu_showing_css = '';
-        // if we're on mobile and the menu is toggling
-        if (window.innerWidth < 760 && this.state.is_menu_showing) {
-            // we set a timeout so that the menu is toggling entirely for smoother animations
-            setTimeout(() => {
-                is_mobile_menu_showing_css = "disable-scroll";
-            }, 400);
-        }
-        else
-            is_mobile_menu_showing_css = this.state.is_menu_showing ? "disable-scroll" : '';
-
-
         return (
             <div className={style.component}>
                 <Header showNav={this.state.current_page !== 'home'}
                     currentPage={this.state.current_page} goTo={this.state.goTo}
                     isMobileMenuShowing={this.state.is_menu_showing}
                     toggleMobileMenu={this.toggleMenu.bind(this)} />
-                <div className={is_mobile_menu_showing_css}>
+                <div className={this.state.is_menu_showing_css}>
                     <Home ref='home_component' goTo={this.state.goTo} />
                     <Skills ref='skills_component' />
                     <Experiences ref='exp_component' />

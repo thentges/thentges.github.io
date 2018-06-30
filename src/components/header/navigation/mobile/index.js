@@ -7,8 +7,8 @@ import BriefCase from 'react-feather/dist/icons/briefcase';
 import Home from 'react-feather/dist/icons/home';
 
 class MobileNav extends React.Component {
-    customClick(goTo_function) {
-        this.props.toggleMobileMenu();
+    async customClick(goTo_function) {
+        await this.props.toggleMobileMenu();
         goTo_function();
     }
 
