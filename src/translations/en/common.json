@@ -1,7 +1,7 @@
 {
     "nav": {
-        "top": "Top",
-        "skills": "Skills"
+        "skills": "Skills",
+        "exp": "Experiences"
     },
     "home": {
         "title": "Hi, I'm {{ name }}",
@@ -15,12 +15,29 @@
         "unit_testing": "Unit testing",
         "others": "Others"
     },
+    "exp": {
+        "title": "Experiences",
+        "intern": "Internship at {{ enterprise }}",
+        "appartoo": {
+            "dates": "july to december 2017",
+            "status": "Full-stack web developer",
+            "description": "Participation in the development of a linking application to search for a colocation.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not."
+        }
+    },
     "tags": {
         "engineer": "engineer",
         "web": "web",
         "best_practices": "best practices",
         "dev": "development",
         "full_stack": "full-stack",
-        "back": "back-end"
+        "back": "back-end",
+        "front": "front-end",
+        "nginx": "NGiNX",
+        "mySQL": "mySQL",
+        "angularJS": "angularJS",
+        "symfony": "symfony",
+        "api": "API",
+        "php": "PHP",
+        "js": "JavaScript"
     }
 }

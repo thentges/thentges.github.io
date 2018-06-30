@@ -9,5 +9,12 @@
         &.white {
             color: white;
         }
+        &.grey {
+            color: $darker-grey;
+        }
+
+        &.light-grey {
+            color: $light-grey;
+        }
     }
 }

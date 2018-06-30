@@ -9,9 +9,9 @@
     .wrapper:before {
         content: '';
         position: absolute;
-        bottom: -5px;
+        bottom: -2px;
         width: 100%;
-        height: 5px;
+        height: 2px;
     }
 
     .wrapper {
@@ -29,4 +29,20 @@
         background: white;
     }
 
+    .wrapper-grey {
+        @extend .wrapper;
+        color: $darker-grey;
+    }
+    .wrapper-grey:before {
+        @extend .wrapper:before;
+        background: $darker-grey;
+    }
+
+    .more {
+        font-size: 0.6em;
+        position: absolute;
+        font-weight: 100;
+        bottom: -3px;
+        right: 0;
+    }
 }

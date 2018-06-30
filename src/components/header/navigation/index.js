@@ -17,6 +17,10 @@ class Navigation extends React.Component {
                         handleClick={this.props.goTo.skills}>
                         {t('nav.skills')}
                     </Item>
+                    <Item isSelected={this.props.currentPage === 'exp'}
+                        handleClick={this.props.goTo.exp}>
+                        {t('nav.exp')}
+                    </Item>
                 </div>
             </div>
         );
