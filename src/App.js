@@ -18,7 +18,7 @@ class App extends React.Component {
             },
             updatePositions: true,
             is_menu_showing: false,
-            is_menu_showing_css: '',
+            is_body_scrollable: true,
             current_position: window.scrollY
         }
     }
@@ -76,13 +76,17 @@ class App extends React.Component {
             this.setState({is_menu_showing: !this.state.is_menu_showing, updatePositions});
             // but we wait till the end of the menu animation to disable scrolling on the body
             setTimeout(() => {
-                this.setState({is_menu_showing_css: 'disable-scroll'})
+                this.setState({is_body_scrollable: false})
             }, 600);
         }
         // if we're going to hide the menu
         else {
             // we enable scrolling on the menu
-            this.setState({is_menu_showing_css: '', is_menu_showing: !this.state.is_menu_showing, updatePositions},
+            this.setState({
+                is_body_scrollable:true,
+                is_menu_showing: !this.state.is_menu_showing,
+                updatePositions
+            },
             () => {
                 // and then we scroll to the position we saved before disabling the menu
                 this.goTo(this.state.current_position);
@@ -92,13 +96,15 @@ class App extends React.Component {
     }
 
     render() {
+        const is_body_scrollable_css = this.state.is_body_scrollable ? '' : 'disable-scroll';
+
         return (
             <div className={style.component}>
                 <Header showNav={this.state.current_page !== 'home'}
                     currentPage={this.state.current_page} goTo={this.state.goTo}
                     isMobileMenuShowing={this.state.is_menu_showing}
                     toggleMobileMenu={this.toggleMenu.bind(this)} />
-                <div className={this.state.is_menu_showing_css}>
+                <div className={is_body_scrollable_css}>
                     <Home ref='home_component' goTo={this.state.goTo} />
                     <Skills ref='skills_component' />
                     <Experiences ref='exp_component' />
