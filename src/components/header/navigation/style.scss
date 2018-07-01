@@ -1,6 +1,4 @@
-@import '../../../styles/colors';
-
-$breakpoint: 760px;
+@import '../../../styles/variables';
 
 :local(.component) {
     color: $green;

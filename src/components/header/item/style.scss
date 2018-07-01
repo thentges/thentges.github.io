@@ -1,4 +1,4 @@
-@import '../../../styles/colors';
+@import '../../../styles/variables';
 
 @mixin underline($color, $width, $right) {
     transition: width 0.4s ease;

@@ -1,6 +1,4 @@
-@import '../../styles/colors';
-
-$appartoo_breakpoint: 760px;
+@import '../../styles/variables';
 
 :local(.component) {
     padding: 20px;
@@ -13,7 +11,7 @@ $appartoo_breakpoint: 760px;
     background: $grey;
 
     .appartoo-dates {
-        @media (max-width: $appartoo_breakpoint){
+        @media (max-width: $breakpoint){
             bottom: -33px;
             left: 0;
         }
@@ -23,7 +21,7 @@ $appartoo_breakpoint: 760px;
         margin-top: 15px;
         display: flex;
         align-items: center;
-        @media (max-width: $appartoo_breakpoint){
+        @media (max-width: $breakpoint){
             flex-direction: column-reverse;
         }
         .image {
