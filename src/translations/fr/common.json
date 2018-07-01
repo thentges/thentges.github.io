@@ -2,7 +2,8 @@
     "nav": {
         "home": "Accueil",
         "skills": "Compétences",
-        "exp": "Expériences"
+        "exp": "Expériences",
+        "projects": "Projets"
     },
     "home": {
         "title": "Salut, je suis {{ name }}",
@@ -24,6 +25,9 @@
             "status": "Développeur web full-stack",
             "description": "Participation au développement d’une application de mise en relation pour la recherche de colocation.\nTravail sur l’API (back-end, Symfony3), et l’UX/UI (front-end, AngularJS).\nParticipation active aux prises de décisions de l’entreprise, techniques ou non."
         }
+    },
+    "projects": {
+        "title": "Projets"
     },
     "tags": {
         "engineer": "ingénieur",

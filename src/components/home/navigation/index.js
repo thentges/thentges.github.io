@@ -2,7 +2,7 @@ import React from 'react'
 import style from './style.scss'
 import HomeButton from './home_btn'
 import { translate } from 'react-i18next';
-// import Package from 'react-feather/dist/icons/package';
+import Package from 'react-feather/dist/icons/package';
 import Share2 from 'react-feather/dist/icons/share-2';
 import BriefCase from 'react-feather/dist/icons/briefcase';
 
@@ -11,7 +11,7 @@ class HomeNav extends React.Component {
         const {t} = this.props
         const skills_icon = <Share2 />
         const exp_icon = <BriefCase />
-        // const project_icon = <Package />
+        const projects_icon = <Package />
 
         return (
             <div className={style.component}>
@@ -23,7 +23,10 @@ class HomeNav extends React.Component {
                     handleClick={this.props.goTo.exp}>
                     {t('nav.exp')}
                 </HomeButton>
-                {/*<HomeButton icon={project_icon}>Projets</HomeButton>*/}
+                <HomeButton icon={projects_icon}
+                    handleClick={this.props.goTo.projects}>
+                    {t('nav.projects')}
+                </HomeButton>
             </div>
         )
     }
