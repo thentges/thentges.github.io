@@ -1,5 +1,4 @@
-@import 'colors';
-
+@import 'variables';
 :local(.component) {
     background: $light-grey;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
@@ -20,5 +19,12 @@
 
     .subtitle-icon {
         padding-top: 5px;
+    }
+
+    .disable-scroll {
+        @media (max-width: 760px){
+            position:fixed;
+            overflow-y: hidden;
+        }
     }
 }

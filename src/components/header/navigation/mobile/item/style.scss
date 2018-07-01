@@ -1,0 +1,17 @@
+@import '../../../../../styles/variables';
+
+:local(.component){
+    transition: all 0.4s ease;
+    padding: 20px 20px;
+    font-size: 2em;
+    border-bottom: solid 1px white;
+    color: white;
+
+    &.selected {
+        background: $green;
+    }
+
+    .icon {
+        margin-right: 30px;
+    }
+}
