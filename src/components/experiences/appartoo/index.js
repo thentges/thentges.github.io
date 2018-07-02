@@ -12,7 +12,7 @@ class AppartooExperience extends React.Component {
                 t('tags.full_stack'), t('tags.dev'), t('tags.web'),
                 t('tags.back'), t('tags.api'), t('tags.php'), t('tags.symfony'),
                 t('tags.front'), t('tags.js'), t('tags.angularJS'),
-                t('tags.mySQL'), t('tags.nginx')
+                t('tags.mySQL'), t('tags.doctrine'), t('tags.nginx')
             ]
         const appartoo_description_formatted = t('exp.appartoo.description').split('\n').map(
             (item, key) => {

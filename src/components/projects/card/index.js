@@ -9,23 +9,35 @@ class ProjectCard extends React.Component {
         const {t} = this.props
         return (
             <div className={style.component}>
-                <div className='card' style={{backgroundImage: `url(${this.props.image})`}}></div>
-                <span className="dimmer">
-                    <div className="title">{this.props.name}</div>
-                    <div className="text">{this.props.children}</div>
-                    <div className="bottom">
-                        <div className="left">
-                            <Tags className="tags" list={this.props.tags} />
-                        </div>
-                        <div className="right">
-                            <div className="view-code">
-                                <a href={this.props.git} target='_blank' className="view-code" >
-                                    <GitHub className="icon" size='15' /> {t('projects.view_code')}
-                                </a>
+                <div className="mobile-title">{this.props.name}</div>
+                <div className="container">
+                    <div className='card' style={{backgroundImage: `url(${this.props.image})`}}></div>
+                    <div className="dimmer">
+                        <div className="title">{this.props.name}</div>
+                        <div className="text">{this.props.children}</div>
+                        <div className="bottom">
+                            <div className="left">
+                                <Tags className="tags" list={this.props.tags} />
+                            </div>
+                            <div className="right">
+                                <div className="view-code">
+                                    <a href={this.props.git} target='_blank' className="view-code" >
+                                        <GitHub className="icon" size='15' /> {t('projects.view_code')}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </span>
+                </div>
+                <div className="mobile-text">{this.props.children}</div>
+                <div className='mobile-tags'>
+                    <Tags list={this.props.tags} />
+                </div>
+                <div className="mobile-view-code">
+                    <a href={this.props.git} target='_blank' className="view-code" >
+                        <GitHub className="icon" size='15' /> {t('projects.view_code')}
+                    </a>
+                </div>
             </div>
        )
     }
