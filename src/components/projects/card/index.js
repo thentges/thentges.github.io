@@ -2,6 +2,7 @@ import React from 'react'
 import style from './style.scss'
 import GitHub from 'react-feather/dist/icons/github';
 import { translate } from 'react-i18next';
+import Tags from '../../ui/tags'
 
 class ProjectCard extends React.Component {
     render() {
@@ -12,11 +13,16 @@ class ProjectCard extends React.Component {
                 <span className="dimmer">
                     <div className="title">{this.props.name}</div>
                     <div className="text">{this.props.children}</div>
-                    <div className="buttons">
-                        <div className="view-code">
-                            <a href={this.props.git} target='_blank'>
-                                <GitHub className="icon" size='15' /> {t('projects.view_code')}
-                            </a>
+                    <div className="bottom">
+                        <div className="left">
+                            <Tags className="tags" list={this.props.tags} />
+                        </div>
+                        <div className="right">
+                            <div className="view-code">
+                                <a href={this.props.git} target='_blank' className="view-code" >
+                                    <GitHub className="icon" size='15' /> {t('projects.view_code')}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </span>
