@@ -28,7 +28,15 @@
     },
     "projects": {
         "title": "Projets",
-        "view_code": "voir le code sur GitHub"
+        "view_code": "voir le code sur GitHub",
+        "nodeApi": {
+            "title": "nodeApi",
+            "description": "blablabla"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "bllkkklelkalk"
+        }
     },
     "tags": {
         "engineer": "ingénieur",
@@ -42,8 +50,22 @@
         "mySQL": "mySQL",
         "angularJS": "angularJS",
         "symfony": "Symfony",
+        "doctrine": "doctrine",
         "api": "API",
         "php": "PHP",
-        "js": "JavaScript"
+        "js": "JavaScript",
+        "circleci": "circleCI",
+        "sequelize": "sequelize",
+        "jwt": "JWT",
+        "auth": "authentification",
+        "unit_testing": "tests unitaires",
+        "bcrypt": "bcrypt",
+        "security": "sécurité",
+        "react": "react",
+        "express": "express.js",
+        "responsive": "responsive",
+        "sass": "sass",
+        "ui": "UI"
+
     }
 }

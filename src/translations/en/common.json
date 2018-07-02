@@ -59,12 +59,12 @@
         "jwt": "JWT",
         "auth": "authentification",
         "unit_testing": "unit testing",
-        "bcrypt": "Bcrypt",
+        "bcrypt": "bcrypt",
         "security": "security",
-        "react": "React",
+        "react": "react",
         "express": "express.js",
         "responsive": "responsive",
-        "sass": "Sass",
+        "sass": "sass",
         "ui": "UI"
     }
 }
