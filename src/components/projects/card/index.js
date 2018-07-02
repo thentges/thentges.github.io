@@ -31,7 +31,7 @@ class ProjectCard extends React.Component {
                 </div>
                 <div className="mobile-text">{this.props.children}</div>
                 <div className='mobile-tags'>
-                    <Tags list={this.props.tags} />
+                    <Tags inverted list={this.props.tags} />
                 </div>
                 <div className="mobile-view-code">
                     <a href={this.props.git} target='_blank' className="view-code" >

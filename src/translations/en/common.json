@@ -32,6 +32,10 @@
         "nodeApi": {
             "title": "nodeApi",
             "description": "blablabla"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "bllkkklelkalk"
         }
     },
     "tags": {
@@ -53,9 +57,14 @@
         "circleci": "circleCI",
         "sequelize": "sequelize",
         "jwt": "JWT",
-        "auth": "Authentification",
+        "auth": "authentification",
         "unit_testing": "unit testing",
         "bcrypt": "Bcrypt",
-        "security": "security"
+        "security": "security",
+        "react": "React",
+        "express": "express.js",
+        "responsive": "responsive",
+        "sass": "Sass",
+        "ui": "UI"
     }
 }
