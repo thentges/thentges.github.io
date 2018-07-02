@@ -27,7 +27,8 @@
         }
     },
     "projects": {
-        "title": "Projects"
+        "title": "Projects",
+        "view_code": "view code on GitHub"
     },
     "tags": {
         "engineer": "engineer",

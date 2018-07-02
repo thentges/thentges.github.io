@@ -27,7 +27,8 @@
         }
     },
     "projects": {
-        "title": "Projets"
+        "title": "Projets",
+        "view_code": "voir le code sur GitHub"
     },
     "tags": {
         "engineer": "ingénieur",
