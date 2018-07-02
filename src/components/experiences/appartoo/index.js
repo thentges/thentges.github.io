@@ -3,6 +3,7 @@ import { translate } from 'react-i18next';
 import appartoo_logo from '../../../images/appartoo.png'
 import Experience from '../experience'
 import Tags from '../../ui/tags'
+import Divider from '../../ui/divider'
 
 class AppartooExperience extends React.Component {
     render() {
@@ -20,13 +21,19 @@ class AppartooExperience extends React.Component {
             });
 
         return (
-            <Experience image={appartoo_image}>
-                <div className="status">{t('exp.appartoo.status')}</div>
-                <Tags list={appartoo_tags} inverted />
-                <div className='text'>
-                    {appartoo_description_formatted}
+            <React.Fragment>
+                <Experience image={appartoo_image}>
+                    <div className="status">{t('exp.appartoo.status')}</div>
+                    <Tags list={appartoo_tags} inverted />
+                    <div className='text'>
+                        {appartoo_description_formatted}
+                    </div>
+                </Experience>
+                <Divider size='half-width' />
+                <div className='more-infos'>
+                    <div className="subtitle">{t('exp.appartoo.missions')}</div>
                 </div>
-            </Experience>
+            </React.Fragment>
         );
     }
 }

@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 :local(.component) {
+    color: $darker-grey;
     padding: 20px;
     min-height:100vh;
     display: flex;
@@ -14,6 +15,13 @@
         @media (max-width: $breakpoint){
             bottom: -33px;
             left: 0;
+        }
+    }
+
+    .more-infos {
+        margin-top: 20px;
+        .subtitle {
+            font-size: 1.5em;
         }
     }
 
@@ -40,7 +48,6 @@
             flex: 4;
             margin:0;
             font-size: 1.2em;
-            color: $darker-grey;
             .text {
                 margin-top: 10px;
             }

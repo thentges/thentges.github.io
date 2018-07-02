@@ -22,7 +22,8 @@
         "appartoo": {
             "dates": "july to december 2017",
             "status": "Full-stack web developer",
-            "description": "Participation in the development of a linking application to search for a colocation.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not."
+            "description": "Participation in the development of a linking application to search for a colocation.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not.",
+            "missions": "Important missions"
         }
     },
     "tags": {
