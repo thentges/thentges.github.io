@@ -37,7 +37,7 @@ class Projects extends React.Component {
             name: t('projects.recommendator_back.title'),
             description: t('projects.recommendator_back.description'),
             image: recommendator_back_img,
-            link: '',
+            link: 'https://github.com/TristanMngr/recommendator-backend',
             tags: [
                 t('tags.back'), t('tags.api'), t('tags.java'), t('tags.spring'),
                 t('tags.jwt'), t('tags.unit_testing'), t('tags.auth'),
@@ -50,8 +50,10 @@ class Projects extends React.Component {
             name: t('projects.recommendator_front.title'),
             description: t('projects.recommendator_front.description'),
             image: recommendator_front_img,
-            link: '',
+            link: 'https://github.com/TristanMngr/recommendator-frontend',
             tags: [
+                t('tags.front'), t('tags.js'), t('tags.react'), t('tags.redux'),
+                t('tags.sass'), t('tags.responsive'), t('tags.ui') ,t('tags.auth')
             ]
         }
 

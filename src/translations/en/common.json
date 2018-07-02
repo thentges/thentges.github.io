@@ -40,6 +40,10 @@
         "recommendator_back": {
             "title": "The Recommendator (API)",
             "description": "hahalelrhrheh"
+        },
+        "recommendator_front": {
+            "title": "The Recommendator (Client)",
+            "description": "hahalelrhrheh"
         }
     },
     "tags": {
@@ -61,7 +65,7 @@
         "circleci": "circleCI",
         "sequelize": "sequelize",
         "jwt": "JWT",
-        "auth": "authentification",
+        "auth": "authentication",
         "unit_testing": "unit testing",
         "bcrypt": "bcrypt",
         "security": "security",
@@ -69,6 +73,10 @@
         "express": "express.js",
         "responsive": "responsive",
         "sass": "sass",
-        "ui": "UI"
+        "ui": "UI",
+        "hibernate": "hibernate",
+        "postgres": "postgreSQL",
+        "spring": "spring",
+        "redux": "redux"
     }
 }

@@ -40,6 +40,10 @@
         "recommendator_back": {
             "title": "The Recommendator (API)",
             "description": "hahalelrhrheh"
+        },
+        "recommendator_front": {
+            "title": "The Recommendator (Client)",
+            "description": "hahalelrhrheh"
         }
     },
     "tags": {
@@ -69,7 +73,10 @@
         "express": "express.js",
         "responsive": "responsive",
         "sass": "sass",
-        "ui": "UI"
-
+        "ui": "UI",
+        "hibernate": "hibernate",
+        "postgres": "postgreSQL",
+        "spring": "spring",
+        "redux": "redux"
     }
 }
