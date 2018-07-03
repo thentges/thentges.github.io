@@ -13,7 +13,7 @@ function AppartooUX(props) {
             <SubExperience title={t('exp.appartoo.ux.title')}
                 description={t('exp.appartoo.ux.main_desc')}
                 list={JSON.parse(t('exp.appartoo.ux.list'))}
-                inverted end={<img src={appartoo_group} alt='' />}>
+                end={<img src={appartoo_group} alt=''/>} centerEnd>
                 <div className="images">
                     <img src={appartoo_search} alt='' />
                     <img src={appartoo_profile} alt='' />

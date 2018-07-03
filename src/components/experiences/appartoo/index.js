@@ -6,6 +6,7 @@ import Divider from '../../ui/divider'
 import appartoo_logo from '../../../images/appartoo.png'
 import AppartooChat from './chat'
 import AppartooUX from './ux'
+import AppartooNotif from './notif_center'
 
 class AppartooExperience extends React.Component {
     render() {
@@ -31,6 +32,8 @@ class AppartooExperience extends React.Component {
                 <div className='more-infos'>
                     <div className='subtitle'>{t('exp.appartoo.missions')}</div>
                     <AppartooChat />
+                    <Divider size='half-width' />
+                    <AppartooNotif />
                     <Divider size='half-width' />
                     <AppartooUX />
                 </div>

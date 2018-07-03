@@ -34,6 +34,12 @@
                 "title": "Modernisation et uniformisation de l’UX",
                 "main_desc": "Refonte graphique de l’affichage des annonces et des profils sur le site et éutilisation des vues crées à travers l’application pour un meilleur confort utilisateur. Optimisation de la recherche.",
                 "list": "[\"Meilleure cohérence du design global et meilleur confort lors de la navigation\",\"Modernisation de l’interface pour coller aux normes actuelles du web\",\"Application des filtres de recherche au clic sans avoir besoin de cliquer sur le bouton Rechercher à plusieurs reprises\"]"
+            },
+            "notif": {
+                "title": "Refactoring du système de notifications",
+                "main_desc": "Uniformisation du système de notifications, ajout de modes de notifications supplémentaires (seulement email présent) et refactoring du code en un service \"Notification Center\".",
+                "list": "[\"Ajout de notifications de bureau (push) à l’aide d’un Service Worker\",\"Prise en charge des notifications Facebook (API Graph)\", \"Envoi de SMS (API Nexmo)\", \"Création d’un service gérant l’envoi de toutes les notifications selon différents critères\"]",
+                "result": "Possibilité pour les utilisateurs d’être notifiés via différents types de notifications et ainsi d’accélérer leur recherche de colocation tout en améliorant la maintenance du code."
             }
         }
     },

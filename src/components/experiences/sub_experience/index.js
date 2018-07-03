@@ -19,7 +19,7 @@ function SubExperience(props) {
                     )}
                 </ul>
             </div>
-            {props.end && <div className="end">{props.end}</div>}
+            {props.end && <div className={`end ${props.centerEnd ? 'center' : ''}`}>{props.end}</div>}
         </React.Fragment>
     )
 }

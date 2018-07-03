@@ -1,9 +1,6 @@
 @import '../../../../styles/variables';
 
 :local(.component) {
-    img {
-        width: 50%;
-    }
     .images {
         display:flex;
         flex-direction: row;
@@ -15,7 +12,7 @@
             align-self: center;
             @media (min-width: $breakpoint){
                 width: 20vw;
-                margin-left: 15px;
+                margin-right: 15px;
             }
             @media (max-width: $breakpoint){
                 width: 45%;
