@@ -1,23 +1,5 @@
 @import '../../../../styles/variables';
 
 :local(.component) {
-    .images {
-        display:flex;
-        flex-direction: row;
-        @media (max-width: $breakpoint){
-            justify-content: space-around;
-        }
-        img {
-            border-radius: 5px;
-            align-self: center;
-            @media (min-width: $breakpoint){
-                width: 20vw;
-                margin-right: 15px;
-            }
-            @media (max-width: $breakpoint){
-                width: 45%;
-            }
 
-        }
-    }
 }

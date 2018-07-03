@@ -5,7 +5,7 @@ function SubExperience(props) {
     return (
         <React.Fragment>
             <div className="status">{props.title}</div>
-            <Tags list={[]} inverted />
+            <Tags list={props.tags || []} inverted />
             <div className='text'>
                 {props.description}
             </div>
@@ -19,7 +19,7 @@ function SubExperience(props) {
                     )}
                 </ul>
             </div>
-            {props.end && <div className={`end ${props.centerEnd ? 'center' : ''}`}>{props.end}</div>}
+            {props.end && <div className={`end`}>{props.end}</div>}
         </React.Fragment>
     )
 }

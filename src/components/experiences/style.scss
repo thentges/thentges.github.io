@@ -29,14 +29,15 @@
         @import './sub_experience/style';
 
         .end {
-            &.center {
-                text-align:center;
-            }
-            img {
-                border-radius: 5px;
-                width: 50%;
-                @media (max-width: $breakpoint) {
-                    width: 75%;
+            .images {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap:wrap;    
+                img {
+                    border-radius: 5px;
+                    align-self: center;
+                    margin-bottom: 10px;
                 }
             }
         }

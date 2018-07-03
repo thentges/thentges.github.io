@@ -5,14 +5,5 @@
         @media (min-width: $breakpoint) {
             margin-left:15px;
         }
-        border-radius: 5px;
-        align-self: center;
-        @media (min-width: $breakpoint){
-            width: 40vw;
-            margin-right: 15px;
-        }
-        @media (max-width: $breakpoint){
-            width: 100%;
-        }
     }
 }

@@ -8,16 +8,19 @@ import style from './style.scss'
 
 function AppartooUX(props) {
     const {t} = props
+    const end = (
+        <div className="images">
+            <img src={appartoo_profile} alt=''/>
+            <img src={appartoo_group} alt=''/>
+        </div>
+    )
     return (
         <div className={style.component}>
             <SubExperience title={t('exp.appartoo.ux.title')}
                 description={t('exp.appartoo.ux.main_desc')}
                 list={JSON.parse(t('exp.appartoo.ux.list'))}
-                end={<img src={appartoo_group} alt=''/>} centerEnd>
-                <div className="images">
-                    <img src={appartoo_search} alt='' />
-                    <img src={appartoo_profile} alt='' />
-                </div>
+                end={end}>
+                <img src={appartoo_search} alt='' />
             </SubExperience>
         </div>
     )
