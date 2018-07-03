@@ -22,7 +22,14 @@
         "appartoo": {
             "dates": "juillet à décembre 2017",
             "status": "Développeur web full-stack",
-            "description": "Participation au développement d’une application de mise en relation pour la recherche de colocation.\nTravail sur l’API (back-end, Symfony3), et l’UX/UI (front-end, AngularJS).\nParticipation active aux prises de décisions de l’entreprise, techniques ou non."
+            "description": "Participation au développement d’une application de mise en relation pour la recherche de colocation.\nTravail sur l’API (back-end, Symfony3), et l’UX/UI (front-end, AngularJS).\nParticipation active aux prises de décisions de l’entreprise, techniques ou non.",
+            "missions": "Missions importantes",
+            "chat": {
+                "title": "Messagerie instantannée via WebSockets",
+                "main_desc": "Mise en place d’un serveur de WebSockets pour réaliser une messagerie instantanée afin de remplacer l’ancien système passant par Firebase et éviter les duplications de données entre Firebase et la base de donnée relationnelle de l’application.",
+                "list": "[\"Communication en temps réel via WebSockets avec le front-end (client) pour afficher les messages en temps réel\",\"Configuration d’un proxy inverse pour utiliser le SSL\",\"Installation en tant que supervisor pour garantir son accessibilité en toute condition et un logging de qualité\",\"Migration de plus de 130 000 conversations utilisateurs de Firebase vers mySQL\"]",
+                "result": "Entre 5 et 8 secondes de temps d’execution gagné sur certaines actions clés du site (inscription, dépôt d’annonce)."
+            }
         }
     },
     "tags": {

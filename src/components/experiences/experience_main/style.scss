@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+
+:local(.component) {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    @media (max-width: $breakpoint){
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 2;
+        height: inherit;
+        .logo {
+            width: 50vw;
+            max-width: 350px;
+        }
+    }
+
+    .content {
+        flex: 4;
+        margin:0;
+        font-size: 1.2em;
+
+    }
+}

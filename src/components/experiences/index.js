@@ -12,7 +12,7 @@ class Experiences extends React.Component {
             <div className={style.component}>
                 <BlockTitle color='grey'>{t('exp.title')}</BlockTitle>
 
-                <SubTitle color='grey' more={t('exp.appartoo.dates')} moreClass='appartoo-dates' >
+                <SubTitle color='grey' more={t('exp.appartoo.dates')}>
                     {t('exp.intern' , {'enterprise': 'Appartoo'})}
                 </SubTitle>
                 <AppartooExperience />
