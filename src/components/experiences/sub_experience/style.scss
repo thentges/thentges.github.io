@@ -1,0 +1,31 @@
+.image-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $breakpoint){
+        flex-direction: column;
+    }
+    &.inverted {
+        flex-direction: row-reverse;
+        @media (max-width: $breakpoint){
+            flex-direction: column;
+        }
+    }
+    justify-content: center;
+    .bullet-list {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+        background: $grey;
+        border: solid 1px white;
+        .item {
+            text-align:justify;
+            line-height: 1.5;
+            padding: 5px 10px;
+        }
+    }
+}

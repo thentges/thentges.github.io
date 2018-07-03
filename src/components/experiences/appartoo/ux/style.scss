@@ -1,0 +1,26 @@
+@import '../../../../styles/variables';
+
+:local(.component) {
+    img {
+        width: 50%;
+    }
+    .images {
+        display:flex;
+        flex-direction: row;
+        @media (max-width: $breakpoint){
+            justify-content: space-around;
+        }
+        img {
+            border-radius: 5px;
+            align-self: center;
+            @media (min-width: $breakpoint){
+                width: 20vw;
+                margin-left: 15px;
+            }
+            @media (max-width: $breakpoint){
+                width: 45%;
+            }
+
+        }
+    }
+}

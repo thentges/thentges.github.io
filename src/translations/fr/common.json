@@ -29,6 +29,11 @@
                 "main_desc": "Mise en place d’un serveur de WebSockets pour réaliser une messagerie instantanée afin de remplacer l’ancien système passant par Firebase et éviter les duplications de données entre Firebase et la base de donnée relationnelle de l’application.",
                 "list": "[\"Communication en temps réel via WebSockets avec le front-end (client) pour afficher les messages en temps réel\",\"Configuration d’un proxy inverse pour utiliser le SSL\",\"Installation en tant que supervisor pour garantir son accessibilité en toute condition et un logging de qualité\",\"Migration de plus de 130 000 conversations utilisateurs de Firebase vers mySQL\"]",
                 "result": "Entre 5 et 8 secondes de temps d’execution gagné sur certaines actions clés du site (inscription, dépôt d’annonce)."
+            },
+            "ux": {
+                "title": "Modernisation et uniformisation de l’UX",
+                "main_desc": "Refonte graphique de l’affichage des annonces et des profils sur le site et éutilisation des vues crées à travers l’application pour un meilleur confort utilisateur. Optimisation de la recherche.",
+                "list": "[\"Meilleure cohérence du design global et meilleur confort lors de la navigation\",\"Modernisation de l’interface pour coller aux normes actuelles du web\",\"Application des filtres de recherche au clic sans avoir besoin de cliquer sur le bouton Rechercher à plusieurs reprises\"]"
             }
         }
     },

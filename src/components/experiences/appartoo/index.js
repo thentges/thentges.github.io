@@ -4,7 +4,8 @@ import ExperienceMain from '../experience_main'
 import Tags from '../../ui/tags'
 import Divider from '../../ui/divider'
 import appartoo_logo from '../../../images/appartoo.png'
-import appartoo_chat from '../../../images/appartoo_chat.png'
+import AppartooChat from './chat'
+import AppartooUX from './ux'
 
 class AppartooExperience extends React.Component {
     render() {
@@ -16,7 +17,6 @@ class AppartooExperience extends React.Component {
                 t('tags.mySQL'), t('tags.nginx')
             ]
         const appartoo_description_formatted = nl2br(t('exp.appartoo.description'))
-        const appartoo_chat_formatted = nl2br(t('exp.appartoo.chat.main_desc'))
 
         return (
             <React.Fragment>
@@ -30,22 +30,9 @@ class AppartooExperience extends React.Component {
                 <Divider size='half-width' />
                 <div className='more-infos'>
                     <div className='subtitle'>{t('exp.appartoo.missions')}</div>
-                    <div className="status">{t('exp.appartoo.chat.title')}</div>
-                    <Tags list={[]} inverted />
-                    <div className='text'>
-                        {appartoo_chat_formatted}
-                    </div>
-                    <div className="image-list">
-                        <img src={appartoo_chat} alt='' />
-                        <ul className="bullet-list">
-                            {JSON.parse(t('exp.appartoo.chat.list')).map(
-                                (sentence) => {
-                                    return <li className="item">{sentence}</li>
-                                }
-                            )}
-                        </ul>
-                    </div>
-                    <div className="end">{t('exp.appartoo.chat.result')}</div>
+                    <AppartooChat />
+                    <Divider size='half-width' />
+                    <AppartooUX />
                 </div>
             </React.Fragment>
         );
