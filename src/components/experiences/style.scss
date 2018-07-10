@@ -1,6 +1,7 @@
 @import '../../styles/variables';
 
 :local(.component) {
+    color: $darker-grey;
     padding: 20px;
     min-height:100vh;
     display: flex;
@@ -10,46 +11,34 @@
     flex-direction: column;
     background: $light-grey;
 
-    .appartoo-dates {
-        @media (max-width: $breakpoint){
-            bottom: -33px;
-            left: 0;
-        }
+    .status {
+        line-height: 1;
+        font-size : 1.5em;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
-    .experience {
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        @media (max-width: $breakpoint){
-            flex-direction: column-reverse;
+    .more-infos {
+        margin-bottom: 20px;
+        .subtitle {
+            text-align:center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
         }
-        .image {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 2;
-            height: inherit;
-            .appartoo-logo {
-                width: 50vw;
-                max-width: 350px;
-            }
-        }
+        @import './sub_experience/style';
 
-        .content {
-            flex: 4;
-            margin:0;
-            font-size: 1.2em;
-            color: $darker-grey;
-            .text {
-                margin-top: 10px;
+        .end {
+            .images {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap:wrap;
+                img {
+                    border-radius: 5px;
+                    align-self: center;
+                    margin-bottom: 10px;
+                }
             }
-        }
-
-        .status {
-            line-height: 1;
-            font-size : 1.5em;
-            margin-bottom: 15px;
         }
     }
 
