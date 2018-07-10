@@ -1,0 +1,9 @@
+@import '../../../../styles/variables';
+
+:local(.component) {
+    img {
+        @media (min-width: $breakpoint) {
+            margin-left:15px;
+        }
+    }
+}
