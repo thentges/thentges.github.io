@@ -19,7 +19,6 @@
     }
 
     .more-infos {
-        margin-top: 20px;
         margin-bottom: 20px;
         .subtitle {
             text-align:center;
@@ -33,7 +32,7 @@
                 display:flex;
                 flex-direction: row;
                 justify-content: space-around;
-                flex-wrap:wrap;    
+                flex-wrap:wrap;
                 img {
                     border-radius: 5px;
                     align-self: center;

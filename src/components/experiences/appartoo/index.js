@@ -28,7 +28,7 @@ class AppartooExperience extends React.Component {
                         {appartoo_description_formatted}
                     </div>
                 </ExperienceMain>
-                <Divider size='half-width' />
+                <Divider />
                 <div className='more-infos'>
                     <div className='subtitle'>{t('exp.appartoo.missions')}</div>
                     <AppartooChat />

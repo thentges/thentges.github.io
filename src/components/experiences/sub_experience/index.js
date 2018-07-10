@@ -1,16 +1,16 @@
 import React from 'react'
 import Tags from '../../ui/tags'
+import style from './style.scss'
 
 function SubExperience(props) {
     return (
-        <React.Fragment>
-            <div className="status">{props.title}</div>
-            <Tags list={props.tags || []} inverted />
+        <div className={style.component}>
+            <div className="title">{props.title}</div>
+            <Tags list={props.tags || []} />
             <div className='text'>
                 {props.description}
             </div>
-            <div className={`image-list ${props.inverted ? 'inverted' : ''}`}>
-                {props.children}
+            <div>
                 <ul className="bullet-list">
                     {props.list.map(
                         (sentence, i) => {
@@ -19,8 +19,9 @@ function SubExperience(props) {
                     )}
                 </ul>
             </div>
+
             {props.end && <div className={`end`}>{props.end}</div>}
-        </React.Fragment>
+        </div>
     )
 }
 
