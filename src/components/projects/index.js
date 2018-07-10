@@ -7,6 +7,7 @@ import nodeApi_img from '../../images/nodeApi.png'
 import portfolio_img from '../../images/portfolio.png'
 import recommendator_back_img from '../../images/recommendator-back.png'
 import recommendator_front_img from '../../images/recommendator_front.png'
+import Divider from '../ui/divider';
 
 class Projects extends React.Component {
     render() {
@@ -65,14 +66,17 @@ class Projects extends React.Component {
                         tags={nodeApi.tags} >
                         {nodeApi.description}
                     </ProjectCard>
+                    <Divider size='half-width' />
                     <ProjectCard image={portfolio.image} name={portfolio.name} git={portfolio.link}
                         tags={portfolio.tags} >
                         {portfolio.description}
                     </ProjectCard>
+                    <Divider size='half-width' />
                     <ProjectCard image={recommendator_back.image} name={recommendator_back.name} git={recommendator_back.link}
                         tags={recommendator_back.tags} >
                         {recommendator_back.description}
                     </ProjectCard>
+                    <Divider size='half-width' />
                     <ProjectCard image={recommendator_front.image} name={recommendator_front.name} git={recommendator_front.link}
                         tags={recommendator_front.tags} >
                         {recommendator_front.description}
