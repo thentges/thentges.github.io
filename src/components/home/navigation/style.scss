@@ -6,6 +6,7 @@ $transition_time : 0.6s;
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     .button {
         background: $green;

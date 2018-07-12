@@ -64,6 +64,8 @@
         "doctrine": "doctrine",
         "ux": "experience utilisateur",
         "websockets": "web sockets",
-        "chat": "messagerie"
+        "chat": "messagerie",
+        "security": "sécurité",
+        "heroku": "heroku"
     }
 }
