@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 :local(.component) {
+    box-shadow: $box-shadow-border;
     transition: all 0.4s ease;
     display:flex;
     flex-direction: column;
@@ -32,6 +33,8 @@
         top: 8px;
         left:0;
         .icon {
+            position: relative;
+            top: 3px;
             transition: opacity 0s ease;
             transition-delay: 0.4s;
         }
@@ -51,8 +54,7 @@
     }
     font-size: 0.8em;
     transition: all 0.4s ease-in;
-    left:0;
-    top: -25px;
+    top: -30px;
     left: -75px;
     color: $darker-grey;
 }

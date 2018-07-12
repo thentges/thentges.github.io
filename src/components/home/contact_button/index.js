@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './style.scss'
-import Send from 'react-feather/dist/icons/send'
+import Mail from 'react-feather/dist/icons/mail'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import { translate } from 'react-i18next';
 import Tooltip from '../../ui/tooltip'
@@ -30,7 +30,7 @@ class ContactButton extends React.Component {
         (
             <CopyToClipboard text={email} onCopy={this.copy.bind(this)}>
                 <div className={style.component}>
-                        <span className='contact'>contact <Send className="icon" size={15}/> </span>
+                        <span className='contact'>contact <Mail className="icon" size={18}/> </span>
                         <span className='mail'>{email}</span>
                         <Tooltip show={this.state.isMailCopied} text={t('home.copied')} />
                 </div>
@@ -38,7 +38,7 @@ class ContactButton extends React.Component {
         ) :
         (
             <div className={style.component}>
-                    <span className='contact'>contact <Send className="icon" size={15}/> </span>
+                    <span className='contact'>contact <Mail className="icon" size={18}/> </span>
                     <span className='mail'>{email}</span>
             </div>
         )
