@@ -55,6 +55,7 @@
             opacity: 1;
         }
         &.hidden {
+            display:none;
             transition: opacity 0.4s ease;
             opacity: 0;
         }
