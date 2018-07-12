@@ -22,13 +22,19 @@
         top: 8px;
         opacity: 0;
         font-size: 0.8em;
+        line-height: 1.5;
     }
     .contact {
+        line-height: 1;
         transition: all 0.4s ease-in;
         position:absolute;
         width:100%;
         top: 8px;
         left:0;
+        .icon {
+            transition: opacity 0s ease;
+            transition-delay: 0.4s;
+        }
     }
 
     .tooltip {
@@ -72,13 +78,15 @@
 
 :local(.component):hover .contact {
     .icon {
-        display: none;
+        opacity: 0;
+        transition: opacity 0s ease;
+        transition-delay: 0s;
     }
     font-size: 0.8em;
     transition: all 0.4s ease-in;
     left:0;
     top: -25px;
-    left: -85px;
+    left: -80px;
     color: $darker-grey;
 }
 
