@@ -1,4 +1,7 @@
 @import 'variables';
+html {
+    background: $light-grey;
+}
 :local(.component) {
     background: $light-grey;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
