@@ -4,6 +4,7 @@ import logo from '../../images/thentges_logo.png'
 import { translate } from 'react-i18next';
 import Tags from '../ui/tags'
 import HomeNav from './navigation'
+import ContactButton from './contact_button'
 
 class Home extends Component {
     render() {
@@ -20,6 +21,7 @@ class Home extends Component {
                     <div>
                         <img className="logo" src={logo} alt={'thentges avatar'} />
                     </div>
+                    <ContactButton />
                     <h1 className="title">Thibault HENTGÈS</h1>
                     <div className="subtitle">
                         {t('home.subtitle')}<a href='https://www.isep.fr/'>ISEP</a> (Paris, France)
