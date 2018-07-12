@@ -56,7 +56,7 @@ class App extends React.Component {
     }
 
     updateUserPositions() {
-        if (this.state.updatePositions) {
+        if (this.state.updatePositions || window.innerWidth > 760) {
             const current_position = window.scrollY
             let current_page
             if (current_position === 0 || current_position < this.state.component_positions.home)
