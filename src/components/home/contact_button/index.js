@@ -14,12 +14,11 @@ class ContactButton extends React.Component {
 
     copy(){
         // we do not want to copy to clipboard if we're on a touch device
-        if (window.navigator.maxTouchPoints === 0) {
-            this.setState({isMailCopied: true});
-            setTimeout(() => {
-                this.setState({isMailCopied: false});
-            }, 1500);
-        }
+        this.setState({isMailCopied: true});
+        setTimeout(() => {
+            this.setState({isMailCopied: false});
+        }, 1500);
+
     }
 
     render() {
@@ -33,15 +32,24 @@ class ContactButton extends React.Component {
             </span>
         )
 
-        return (
+        const component = window.navigator.maxTouchPoints === 0 ?
+        (
             <CopyToClipboard text={email} onCopy={this.copy.bind(this)}>
                 <div className={style.component}>
                         <span className='contact'>contact <Send className="icon" size={15}/> </span>
                         <span className='mail'>{email}</span>
-                        {window.navigator.maxTouchPoints === 0 && tooltip}
+                        {tooltip}
                 </div>
             </CopyToClipboard>
+        ) :
+        (
+            <div className={style.component}>
+                    <span className='contact'>contact <Send className="icon" size={15}/> </span>
+                    <span className='mail'>{email}</span>
+            </div>
         )
+
+        return component
     }
 }
 
