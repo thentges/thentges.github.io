@@ -7,7 +7,8 @@
     "home": {
         "title": "Hi, I'm {{ name }}",
         "subtitle": "Software Engineering student at ",
-        "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a full-stack or back-end developper."
+        "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a full-stack or back-end developper.",
+        "copied": "copied to clipboard"
     },
     "skills": {
         "title": "Technical skills",
