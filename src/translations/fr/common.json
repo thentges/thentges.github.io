@@ -53,8 +53,8 @@
             "description": "API REST avec Express.js et Sequelize comme ORM. Authentification via JSON Web Token (JWT) et cryptage de mot de passe avec bcrypt pour des raisons de sécurité.\nContient des tests avec mocha et chai ainsi qu'une intégration continue utilisant circleCI et une gestion d'erreur personnalisée."
         },
         "portfolio": {
-            "title": "Portfolio",
-            "description": "bllkkklelkalk"
+            "title": "Portfolio personnel",
+            "description": "Single Page Application (SPA) entièrement responsive réalisée avec React hébergé sur GitHub Pages en utilisant Sass pour le style.\nNavigation personnalisée en scrollant sur la page, aucun framework css n'a été utilisé. Supporte différents langages grâce à i18next."
         },
         "recommendator_back": {
             "title": "The Recommendator (API)",
