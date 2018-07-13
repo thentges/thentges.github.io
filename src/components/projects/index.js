@@ -8,13 +8,14 @@ import portfolio_img from '../../images/portfolio.png'
 import recommendator_back_img from '../../images/recommendator-back.png'
 import recommendator_front_img from '../../images/recommendator_front.png'
 import Divider from '../ui/divider';
+import {nl2br} from '../../utils'
 
 class Projects extends React.Component {
     render() {
         const {t} = this.props;
         const nodeApi = {
             name: t('projects.nodeApi.title'),
-            description: t('projects.nodeApi.description'),
+            description: nl2br(t('projects.nodeApi.description')),
             image: nodeApi_img,
             link: 'https://github.com/thentges/nodeApi',
             tags: [ t('tags.back'), t('tags.api'), t('tags.js'),
@@ -26,7 +27,7 @@ class Projects extends React.Component {
 
         const portfolio = {
             name: t('projects.portfolio.title'),
-            description: t('projects.portfolio.description'),
+            description: nl2br(t('projects.portfolio.description')),
             image: portfolio_img,
             link: 'https://github.com/thentges/thentges.github.io',
             tags: [ t('tags.front'), t('tags.js'), t('tags.react'), t('tags.sass'),
@@ -36,7 +37,7 @@ class Projects extends React.Component {
 
         const recommendator_back = {
             name: t('projects.recommendator_back.title'),
-            description: t('projects.recommendator_back.description'),
+            description: nl2br(t('projects.recommendator_back.description')),
             image: recommendator_back_img,
             link: 'https://github.com/TristanMngr/recommendator-backend',
             tags: [
@@ -49,12 +50,12 @@ class Projects extends React.Component {
 
         const recommendator_front = {
             name: t('projects.recommendator_front.title'),
-            description: t('projects.recommendator_front.description'),
+            description: nl2br(t('projects.recommendator_front.description')),
             image: recommendator_front_img,
             link: 'https://github.com/TristanMngr/recommendator-frontend',
             tags: [
                 t('tags.front'), t('tags.js'), t('tags.react'), t('tags.redux'),
-                t('tags.sass'), t('tags.responsive'), t('tags.ui') ,t('tags.auth'), 
+                t('tags.sass'), t('tags.responsive'), t('tags.ui') ,t('tags.auth'),
             ]
         }
 

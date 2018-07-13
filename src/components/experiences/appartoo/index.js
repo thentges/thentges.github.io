@@ -7,6 +7,7 @@ import appartoo_logo from '../../../images/appartoo.png'
 import AppartooChat from './chat'
 import AppartooUX from './ux'
 import AppartooNotif from './notif_center'
+import {nl2br} from '../../../utils'
 
 class AppartooExperience extends React.Component {
     render() {
@@ -40,14 +41,6 @@ class AppartooExperience extends React.Component {
             </React.Fragment>
         );
     }
-}
-
-const nl2br = (text) => {
-    return text.split('\n').map(
-        (item, key) => {
-            return <span key={key}>{item}<br/></span>
-        }
-    );
 }
 
 export default translate('common')(AppartooExperience);
