@@ -1,4 +1,5 @@
 $green: #9be795;
+$lighter-green: lighten($green, 5);
 $light-green: lighten($green, 10);
 $green-hover: darken($green, 10);
 $green-active: darken($green, 15);
@@ -14,4 +15,5 @@ $light-grey: #f0f0f0;
 
 $breakpoint: 760px;
 
+$dimmer-color: rgba(0 ,0 ,0 , 0.7);
 $box-shadow-border: 0px 0px 5px $grey;

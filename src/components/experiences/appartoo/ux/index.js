@@ -8,7 +8,8 @@ function AppartooUX(props) {
 
     const tags = [
         t('tags.front'), t('tags.ux'), t('tags.refactoring'),
-        t('tags.js'), t('tags.angularJS'), t('tags.best_practices')
+        t('tags.js'), t('tags.angularJS'), t('tags.best_practices'), t('tags.responsive'),
+        t('tags.ui')
     ]
 
     return (

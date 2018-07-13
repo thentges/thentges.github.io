@@ -5,6 +5,7 @@ import style from './styles/app.scss'
 import Header from './components/header'
 import Skills from './components/skills'
 import Experiences from './components/experiences'
+import Projects from './components/projects'
 
 class App extends React.Component {
     constructor(props){
@@ -14,7 +15,8 @@ class App extends React.Component {
             goTo: {
                 home: null,
                 skills: null,
-                exp: null
+                exp: null,
+                projects: null
             },
             updatePositions: true,
             is_menu_showing: false,
@@ -23,7 +25,8 @@ class App extends React.Component {
             component_positions: {
                 home: 0,
                 skills: 0,
-                exp: 0
+                exp: 0,
+                projects: 0
             }
         }
     }
@@ -41,16 +44,19 @@ class App extends React.Component {
         const home_positions = this.getPosition(this.refs.home_component)
         const skills_positions = this.getPosition(this.refs.skills_component)
         const exp_positions = this.getPosition(this.refs.exp_component)
+        const projects_positions = this.getPosition(this.refs.projects_component)
         this.setState({
             goTo: {
                 home: this.goTo.bind(this, home_positions.start),
                 skills: this.goTo.bind(this, skills_positions.start),
-                exp: this.goTo.bind(this, exp_positions.start)
+                exp: this.goTo.bind(this, exp_positions.start),
+                projects: this.goTo.bind(this, projects_positions.start)
             },
             component_positions: {
                 home: home_positions.end,
                 skills: skills_positions.end,
-                exp: exp_positions.end
+                exp: exp_positions.end,
+                projects: projects_positions.end
             }
         })
     }
@@ -65,6 +71,8 @@ class App extends React.Component {
                 current_page = 'skills'
             else if (current_position < this.state.component_positions.exp)
                 current_page = 'exp'
+            else if (current_position < this.state.component_positions.projects)
+                current_page = 'projects'
             this.setState({current_page, current_position})
         }
     }
@@ -123,6 +131,7 @@ class App extends React.Component {
                     <Home ref='home_component' goTo={this.state.goTo} />
                     <Skills ref='skills_component' />
                     <Experiences ref='exp_component' />
+                    <Projects ref='projects_component' />
                 </div>
             </div>
         );

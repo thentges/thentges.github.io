@@ -21,6 +21,10 @@ class LaptopNav extends React.Component {
                         handleClick={this.props.goTo.exp}>
                         {t('nav.exp')}
                     </Item>
+                    <Item isSelected={this.props.currentPage === 'projects'}
+                        handleClick={this.props.goTo.projects}>
+                        {t('nav.projects')}
+                    </Item>
                 </div>
             </div>
         )

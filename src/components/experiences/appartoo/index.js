@@ -7,6 +7,7 @@ import appartoo_logo from '../../../images/appartoo.png'
 import AppartooChat from './chat'
 import AppartooUX from './ux'
 import AppartooNotif from './notif_center'
+import {nl2br} from '../../../utils'
 
 class AppartooExperience extends React.Component {
     render() {
@@ -15,7 +16,7 @@ class AppartooExperience extends React.Component {
                 t('tags.full_stack'), t('tags.dev'), t('tags.web'),
                 t('tags.back'), t('tags.api'), t('tags.php'), t('tags.symfony'),
                 t('tags.front'), t('tags.js'), t('tags.angularJS'),
-                t('tags.mySQL'), t('tags.nginx')
+                t('tags.mySQL'), t('tags.doctrine'), t('tags.nginx')
             ]
         const appartoo_description_formatted = nl2br(t('exp.appartoo.description'))
 
@@ -40,14 +41,6 @@ class AppartooExperience extends React.Component {
             </React.Fragment>
         );
     }
-}
-
-const nl2br = (text) => {
-    return text.split('\n').map(
-        (item, key) => {
-            return <span key={key}>{item}<br/></span>
-        }
-    );
 }
 
 export default translate('common')(AppartooExperience);

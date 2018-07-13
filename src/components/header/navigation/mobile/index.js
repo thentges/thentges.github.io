@@ -6,6 +6,7 @@ import Share2 from 'react-feather/dist/icons/share-2';
 import BriefCase from 'react-feather/dist/icons/briefcase';
 import Home from 'react-feather/dist/icons/home';
 import Close from 'react-feather/dist/icons/x'
+import Package from 'react-feather/dist/icons/package'
 
 class MobileNav extends React.Component {
     async customClick(goTo_function) {
@@ -35,6 +36,10 @@ class MobileNav extends React.Component {
                     <MobileItem isSelected={this.props.currentPage === 'exp'}
                         handleClick={this.customClick.bind(this, this.props.goTo.exp)}>
                         <BriefCase className='icon' /> {t('nav.exp')}
+                    </MobileItem>
+                    <MobileItem isSelected={this.props.currentPage === 'projects'}
+                        handleClick={this.customClick.bind(this, this.props.goTo.projects)}>
+                        <Package className='icon' /> {t('nav.projects')}
                     </MobileItem>
                 </div>
             </div>

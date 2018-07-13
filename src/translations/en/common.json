@@ -2,7 +2,8 @@
     "nav": {
         "home": "Home",
         "skills": "Skills",
-        "exp": "Experiences"
+        "exp": "Experiences",
+        "projects": "Projects"
     },
     "home": {
         "title": "Hi, I'm {{ name }}",
@@ -44,6 +45,26 @@
             }
         }
     },
+    "projects": {
+        "title": "Projects",
+        "view_code": "view code on GitHub",
+        "nodeApi": {
+            "title": "Node.js REST API",
+            "description": "Simple REST API using Express.js and Sequelize as ORM. Custom authentication using JSON Web Token (JWT) and bcrypt password encryption for security reasons.\nInclude tests using mocha and chai with circleCI for continuous integration and custom error handling."
+        },
+        "portfolio": {
+            "title": "Personnal Portfolio",
+            "description": "Fully responsive Single Page Application (SPA) built with React hosted on GitHub Pages and using Sass for styling.\nCustom scroll navigation and no css framework included. Multi languages support using i18next."
+        },
+        "recommendator_back": {
+            "title": "The Recommendator (API)",
+            "description": "Java EE Spring API built for a school project in a 5 members team but only 2-3 persons on the back-end, including me. Custom implementation of JWT for authentication in order to communicate with a React front-end.\nThe goal of the application is to help ISEP's students finding their specialities from an auto-evaluation, so there are some data processing to propose the best speciality matching according to the concepts the student chose.\nInclude tests with circleCI for continuous integration. Heroku deployment."
+        },
+        "recommendator_front": {
+            "title": "The Recommendator (Client)",
+            "description": "React-Redux SPA built for a school project in a 5 members team but only 3-4 persons on the back-end - including me -, consuming our Spring API. We did the specifications of the projects with a client during regular meetings.\nIt contains a user part to find the speciality that best suits a student, and admin one for professors to populate the database (specialities, courses, concepts, ...)."
+        }
+    },
     "tags": {
         "engineer": "engineer",
         "web": "web",
@@ -55,17 +76,34 @@
         "nginx": "NGiNX",
         "mySQL": "mySQL",
         "angularJS": "angularJS",
-        "symfony": "symfony",
+        "symfony": "Symfony",
+        "doctrine": "Doctrine",
         "api": "API",
         "php": "PHP",
         "js": "JavaScript",
+        "circleci": "circleCI",
+        "sequelize": "Sequelize",
+        "jwt": "JWT",
+        "auth": "authentication",
+        "unit_testing": "unit testing",
+        "bcrypt": "bcrypt",
+        "security": "security",
+        "react": "react",
+        "express": "express.js",
+        "responsive": "responsive",
+        "sass": "sass",
+        "ui": "UI",
+        "hibernate": "Hibernate",
+        "postgres": "postgreSQL",
+        "spring": "Spring",
+        "redux": "redux",
         "refactoring": "refactoring",
         "ux": "user experience",
         "websockets": "web sockets",
         "notifications": "notifications",
         "chat": "chat",
-        "doctrine": "doctrine",
         "security": "security",
-        "heroku": "heroku"
+        "heroku": "heroku",
+        "java": "Java"
     }
 }
