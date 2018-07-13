@@ -58,11 +58,11 @@
         },
         "recommendator_back": {
             "title": "The Recommendator (API)",
-            "description": "hahalelrhrheh"
+            "description": "Java EE Spring API construite dans le cas d'un projet d'étude dans une équipe de 5 personnes. Nous étions 2-3 à travailler sur le back-end. Integration personnalisée de JWT pour l’authentification afin de communiquer avec un front-end React.\nLe but de l’application est d’aider les étudiants de l’ISEP à trouver leurs spécialités à partir d’une auto-évaluation, il y a donc du processing de données pour proposer le meilleur matching en fonction des concepts choisis par l’étudiant.\nContient des tests et circleCI pour l’intégration continue. Deploiement sur Heroku."
         },
         "recommendator_front": {
             "title": "The Recommendator (Client)",
-            "description": "hahalelrhrheh"
+            "description": "React-Redux SPA utilisant notre API Spring, réalisée dans le cadre d’un projet d’étude dans une équipe de 5 personnes. Nous étions 3-4 à travailler sur le front-end. Nous avons définis les spécifications du projet avec un client lors de rendez-vous réguliers.\nL’application contient une partie utilisateur pour trouver la spécialité qui correspond le mieux à un étudiant, ainsi qu’une partie admin pour que les professeurs remplissent la base de donnée (spécialités, cours, concepts, …)."
         }
     },
     "tags": {
