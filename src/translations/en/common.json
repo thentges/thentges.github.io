@@ -104,6 +104,7 @@
         "chat": "chat",
         "doctrine": "doctrine",
         "security": "security",
-        "heroku": "heroku"
+        "heroku": "heroku",
+        "java": "Java"
     }
 }

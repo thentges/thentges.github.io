@@ -18,8 +18,8 @@ class Projects extends React.Component {
             image: nodeApi_img,
             link: 'https://github.com/thentges/nodeApi',
             tags: [ t('tags.back'), t('tags.api'), t('tags.js'),
-                t('tags.express'), t('tags.mySQL'),
-                t('tags.sequelize'), t('tags.jwt'), t('tags.auth'), t('tags.bcrypt'),
+                t('tags.express'), t('tags.mySQL'),t('tags.sequelize'),
+                t('tags.jwt'), t('tags.auth'), t('tags.bcrypt'), t('tags.best_practices'),
                 t('tags.security'), t('tags.unit_testing'), t('tags.circleci')
             ]
         }
@@ -30,7 +30,7 @@ class Projects extends React.Component {
             image: portfolio_img,
             link: 'https://github.com/thentges/thentges.github.io',
             tags: [ t('tags.front'), t('tags.js'), t('tags.react'), t('tags.sass'),
-                t('tags.responsive'), t('tags.ui')
+                t('tags.responsive'), t('tags.ui'), t('tags.ux')
             ]
         }
 
@@ -43,7 +43,7 @@ class Projects extends React.Component {
                 t('tags.back'), t('tags.api'), t('tags.java'), t('tags.spring'),
                 t('tags.jwt'), t('tags.unit_testing'), t('tags.auth'),
                 t('tags.circleci'), t('tags.security'), t('tags.bcrypt'),
-                t('tags.hibernate'), t('tags.postgres')
+                t('tags.hibernate'), t('tags.postgres'), t('tags.heroku'), t('tags.best_practices')
             ]
         }
 
@@ -54,7 +54,7 @@ class Projects extends React.Component {
             link: 'https://github.com/TristanMngr/recommendator-frontend',
             tags: [
                 t('tags.front'), t('tags.js'), t('tags.react'), t('tags.redux'),
-                t('tags.sass'), t('tags.responsive'), t('tags.ui') ,t('tags.auth')
+                t('tags.sass'), t('tags.responsive'), t('tags.ui') ,t('tags.auth'), 
             ]
         }
 

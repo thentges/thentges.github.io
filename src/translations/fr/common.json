@@ -104,6 +104,7 @@
         "websockets": "web sockets",
         "chat": "messagerie",
         "security": "sécurité",
-        "heroku": "heroku"
+        "heroku": "heroku",
+        "java": "Java"
     }
 }
