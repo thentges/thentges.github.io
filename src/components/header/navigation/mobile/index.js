@@ -5,6 +5,7 @@ import Menu from 'react-feather/dist/icons/menu';
 import Share2 from 'react-feather/dist/icons/share-2';
 import BriefCase from 'react-feather/dist/icons/briefcase';
 import Home from 'react-feather/dist/icons/home';
+import Close from 'react-feather/dist/icons/x'
 import Package from 'react-feather/dist/icons/package'
 
 class MobileNav extends React.Component {
@@ -16,10 +17,13 @@ class MobileNav extends React.Component {
     render() {
         const {t} = this.props
         const is_showing_css = this.props.isMobileMenuShowing ? 'show' : 'hide';
+        const burger = this.props.isMobileMenuShowing ?
+            <Close className="hamburger" onClick={this.props.toggleMobileMenu} /> :
+            <Menu className="hamburger" onClick={this.props.toggleMobileMenu} />
 
         return (
             <div className="mobile-menu">
-                <Menu className="hamburger" onClick={this.props.toggleMobileMenu} />
+                {burger}
                 <div className={"menu " + is_showing_css}>
                     <MobileItem isSelected={this.props.currentPage === 'home'} first
                         handleClick={this.customClick.bind(this, this.props.goTo.home)}>

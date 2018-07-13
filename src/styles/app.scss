@@ -1,7 +1,51 @@
 @import 'variables';
+
+html {
+    background: $light-grey;
+    line-height:1.15;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.4285em;
+    margin:0;
+    padding:0;
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $green-hover;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 :local(.component) {
     background: $light-grey;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+
+    h1, h2, h3, h4, h5 {
+        line-height: 1.28571429em;
+        font-weight: 500;
+    }
 
     h1 {
         font-size: 3em;
@@ -18,8 +62,10 @@
     }
 
     .subtitle-icon {
-        padding-top: 5px;
+        position: relative;
+        top: 2px;
     }
+
 
     .disable-scroll {
         @media (max-width: 760px){
@@ -27,4 +73,5 @@
             overflow-y: hidden;
         }
     }
+
 }

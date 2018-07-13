@@ -8,7 +8,8 @@
     "home": {
         "title": "Hi, I'm {{ name }}",
         "subtitle": "Software Engineering student at ",
-        "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a backend or full-stack developper."
+        "about": "I love experiencing and learning new technologies everyday, doing my best to follow best coding practices. I’m particularly attracted by web developpement and I consider myself either as a full-stack or back-end developper.",
+        "copied": "copied to clipboard"
     },
     "skills": {
         "title": "Technical skills",
@@ -34,7 +35,7 @@
             "ux": {
                 "title": "UX modernization and standardization",
                 "main_desc": "Graphical redesign of how we display posts and profiles on the website, reusing created views all over the application for a better user comfort. Optimizing the search feature.",
-                "list": "[\"Better design overall consistency and comfort during navigation\",\"Modernization of the user interface to stay up to date with actual web conventions \",\"Auto application of search filters without having to launch it manually every time\"]"
+                "list": "[\"Better overall design consistency and comfort during navigation\",\"Modernization of the user interface to stay up to date with actual web conventions \",\"Auto application of search filters without having to launch it manually every time\"]"
             },
             "notif": {
                 "title": "Notifications system’s refactoring",
@@ -101,6 +102,8 @@
         "websockets": "web sockets",
         "notifications": "notifications",
         "chat": "chat",
-        "doctrine": "doctrine"
+        "doctrine": "doctrine",
+        "security": "security",
+        "heroku": "heroku"
     }
 }

@@ -7,6 +7,7 @@
     left: 5px;
     padding: 5px 10px;
     flex: 0 0 100px;
+    padding-top: 8px;
 
     .mobile-menu {
         @media (min-width: $breakpoint){
@@ -15,6 +16,8 @@
 
         .hamburger {
             cursor: pointer;
+            position: relative;
+            top: -3px;
         }
 
         .menu {
@@ -23,6 +26,7 @@
             height: 100vh;
             width: 100vw;
             background: $light-green;
+            top: 35px;
 
             &.show {
                 left: 0;
@@ -40,7 +44,7 @@
         }
 
         .logo {
-            height: 25px;
+            height: 20px;
             cursor: pointer;
             position: fixed;
         }

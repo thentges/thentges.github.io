@@ -21,7 +21,13 @@ class App extends React.Component {
             updatePositions: true,
             is_menu_showing: false,
             is_body_scrollable: true,
-            current_position: window.scrollY
+            current_position: window.scrollY,
+            component_positions: {
+                home: 0,
+                skills: 0,
+                exp: 0,
+                projects: 0
+            }
         }
     }
 
@@ -34,42 +40,53 @@ class App extends React.Component {
         return {start: node.offsetTop, end: node.offsetTop + node.offsetHeight};
     }
 
-    updatePositions(){
-        // we update the positions only if the state says we have to do it
-        // this keep the positions value we had before fixing the body to desactivate scroll
-        if (this.state.updatePositions) {
-            const current_position = window.scrollY
-            const home_positions = this.getPosition(this.refs.home_component)
-            const skills_positions = this.getPosition(this.refs.skills_component)
-            const exp_positions = this.getPosition(this.refs.exp_component)
-            const projects_positions = this.getPosition(this.refs.projects_component)
-
-            let current_page
-            if (current_position < home_positions.end)
-                current_page = 'home'
-            else if (current_position < skills_positions.end)
-                current_page = 'skills'
-            else if (current_position < exp_positions.end)
-                current_page = 'exp'
-            else if (current_position < projects_positions.end)
-                current_page = 'projects'
-
-            this.setState({current_position, current_page, goTo: {
+    updateComponentsPositions() {
+        const home_positions = this.getPosition(this.refs.home_component)
+        const skills_positions = this.getPosition(this.refs.skills_component)
+        const exp_positions = this.getPosition(this.refs.exp_component)
+        const projects_positions = this.getPosition(this.refs.projects_component)
+        this.setState({
+            goTo: {
                 home: this.goTo.bind(this, home_positions.start),
                 skills: this.goTo.bind(this, skills_positions.start),
                 exp: this.goTo.bind(this, exp_positions.start),
                 projects: this.goTo.bind(this, projects_positions.start)
-            }})
+            },
+            component_positions: {
+                home: home_positions.end,
+                skills: skills_positions.end,
+                exp: exp_positions.end,
+                projects: projects_positions.end
+            }
+        })
+    }
+
+    updateUserPositions() {
+        if (this.state.updatePositions || window.innerWidth > 760) {
+            const current_position = window.scrollY
+            let current_page
+            if (current_position === 0 || current_position < this.state.component_positions.home)
+                current_page = 'home'
+            else if (current_position < this.state.component_positions.skills)
+                current_page = 'skills'
+            else if (current_position < this.state.component_positions.exp)
+                current_page = 'exp'
+            else if (current_position < this.state.component_positions.projects)
+                current_page = 'projects'
+            this.setState({current_page, current_position})
         }
     }
 
     componentDidMount() {
-        this.updatePositions();
-        window.addEventListener('scroll', this.updatePositions.bind(this));
+        this.updateUserPositions();
+        this.updateComponentsPositions();
+        window.addEventListener('resize', this.updateComponentsPositions.bind(this));
+        window.addEventListener('scroll', this.updateUserPositions.bind(this));
     }
 
     componentWillUnmount() {
-        window.removeEventListener('scroll', this.updatePositions.bind(this));
+        window.removeEventListener('scroll', this.updateUserPositions.bind(this));
+        window.removeEventListener('resize', this.updateComponentsPositions.bind(this));
     }
 
     toggleMenu() {

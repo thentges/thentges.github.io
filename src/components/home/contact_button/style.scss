@@ -1,0 +1,66 @@
+@import '../../../styles/variables';
+
+:local(.component) {
+    box-shadow: $box-shadow-border;
+    transition: all 0.4s ease;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: $green;
+    font-size: 1.5em;
+    position: relative;
+    width: 240px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+
+    .mail {
+        position:absolute;
+        text-align:center;
+        width:100%;
+        top: 8px;
+        opacity: 0;
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+    .contact {
+        line-height: 1;
+        transition: all 0.4s ease-in;
+        position:absolute;
+        width:100%;
+        top: 8px;
+        left:0;
+        .icon {
+            position: relative;
+            top: 3px;
+            transition: opacity 0s ease;
+            transition-delay: 0.4s;
+        }
+    }
+}
+
+:local(.component):hover {
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+
+:local(.component):hover .contact {
+    .icon {
+        opacity: 0;
+        transition: opacity 0s ease;
+        transition-delay: 0s;
+    }
+    font-size: 0.8em;
+    transition: all 0.4s ease-in;
+    top: -30px;
+    left: -70px;
+    color: $dark-grey;
+}
+
+:local(.component):hover .mail {
+    opacity: 1;
+    transition: all 0s ease;
+    transition-delay: 0.4s;
+}

@@ -8,7 +8,8 @@
     "home": {
         "title": "Salut, je suis {{ name }}",
         "subtitle": "Étudiant Ingénieur Logiciel à l'",
-        "about": "J’adore découvrir et apprendre de nouvelles technologies, essayant au maximum de suivre les bonnes pratiques de développement. Je suis particulièrement attiré par le développement web et me considère comme un développeur back-end ou bien full-stack."
+        "about": "J’adore découvrir et apprendre de nouvelles technologies, essayant au maximum de suivre les bonnes pratiques de développement. Je suis particulièrement attiré par le développement web et me considère comme un développeur full-stack ou bien back-end.",
+        "copied": "copié dans le presse-papier"
     },
     "skills": {
         "title": "Compétences techniques",
@@ -101,6 +102,8 @@
         "doctrine": "doctrine",
         "ux": "experience utilisateur",
         "websockets": "web sockets",
-        "chat": "messagerie"
+        "chat": "messagerie",
+        "security": "sécurité",
+        "heroku": "heroku"
     }
 }
