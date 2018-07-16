@@ -24,7 +24,7 @@
         "appartoo": {
             "dates": "july to december 2017",
             "status": "Full-stack web developer",
-            "description": "Participation in the development of a linking application to search for a colocation.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not.",
+            "description": "Participation in the development of a linking application to search for a flatshare.\nWorking on the API (back-end, Symfony3), and UX/UI (front-end, AngularJS).\nActive participation in decisions of the company, technical or not.",
             "missions": "Important missions",
             "chat": {
                 "title": "Instant messaging using WebSockets",
@@ -41,7 +41,7 @@
                 "title": "Notifications system’s refactoring",
                 "main_desc": "Standardization of the notifications system, adding new notifications' types (only email at the time) and code refactoring in a \"Notification Center\" service.",
                 "list": "[\"Adding desktop notifications (push) using a Service Worker\",\"Supporting Facebook notifications (API Graph)\", \"Sending SMS (API Nexmo)\", \"Creating a service to handle sending all these notifications depending on certain criteria\"]",
-                "result": "Possibility for users to be notified using different types of notifications in order to speed up their colocation search while improving code maintenance."
+                "result": "Possibility for users to be notified using different types of notifications in order to speed up their flatshare search while improving code maintenance."
             }
         }
     },
@@ -62,7 +62,7 @@
         },
         "recommendator_front": {
             "title": "The Recommendator (Client)",
-            "description": "React-Redux SPA built for a school project in a 5 members team but only 3-4 persons on the back-end - including me -, consuming our Spring API. We did the specifications of the projects with a client during regular meetings.\nIt contains a user part to find the speciality that best suits a student, and admin one for professors to populate the database (specialities, courses, concepts, ...)."
+            "description": "React-Redux SPA built for a school project in a 5 members team but only 3-4 persons on the front-end - including me -, consuming our Spring API. We did the specifications of the projects with a client during regular meetings.\nIt contains a user part to find the speciality that best suits a student, and admin one for professors to populate the database (specialities, courses, concepts, ...)."
         }
     },
     "tags": {
