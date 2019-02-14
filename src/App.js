@@ -32,7 +32,8 @@ class App extends React.Component {
     }
 
     goTo(position){
-        window.scrollTo(0, position);
+        // window.scrollTo(0, position);
+        window.scrollTo({ top: position, behavior: 'smooth' });
     }
 
     getPosition(ref){
